@@ -1,0 +1,33 @@
+{
+  "name": "harrier-finalproject-frontend",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "watch:sass": "node-sass ./assets/sass/main.scss ./assets/css/style.css -w"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/IlhamBinyetov/Harrier-FinalProject-FrontEnd.git"
+  },
+  "author": "Ilham Binyetov",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/IlhamBinyetov/Harrier-FinalProject-FrontEnd/issues"
+  },
+  "homepage": "https://github.com/IlhamBinyetov/Harrier-FinalProject-FrontEnd#readme",
+
+  
+  "devDependencies": {
+    "autoprefixer": "^10.4.0",
+    "live-server": "^1.2.1",
+    "node-sass": "^6.0.1",
+    "postcss": "^8.3.11",
+    "concat": "^1.0.3",
+    "gulp": "^4.0.2",
+    "gulp-imagemin": "^7.1.0",
+    "npm-run-all": "^4.1.5",
+    "postcss-cli": "^7.1.1",
+    "svgo": "^1.3.2"
+  }
+}

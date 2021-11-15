@@ -1,0 +1,31 @@
+.footer-section {
+  background-color: #23292e;
+  color: #c6c4bf;
+  z-index: -1;
+
+  .footer {
+    h4 {
+      padding: 30px 10px;
+      font-size: 20px;
+      margin: 0;
+      color: #fff;
+      font-weight: 500;
+      font-family: "Saira Condensed", sans-serif;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+    }
+    ul {
+      padding: 20px 10px;
+      li {
+        color: whitesmoke;
+        line-height: 30px;
+        a {
+          color: whitesmoke;
+          &:hover {
+            color: #fbe122;
+          }
+        }
+      }
+    }
+  }
+}
