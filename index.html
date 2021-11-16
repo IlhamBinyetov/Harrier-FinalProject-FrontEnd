@@ -10,6 +10,12 @@
     />
 
     <link rel="stylesheet" href="./assets/css/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"
+    />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
     <title>Document</title>
   </head>
   <body>
@@ -17,174 +23,242 @@
 
     <header class="header">
       <div class="container-fluid">
-        <div class="row">
-          <div class="navbar d-flex">
-            <div class="logo col-3">
-              <a href="#">
-                <img src="./assets/images/logo.png" alt="logo" />
-              </a>
-            </div>
-            <div class="header-nav">
-              <div class="banners d-flex justify-content-between">
-                <div class="banners-firstPart">
-                  <p>Save up to 40% Hurry Limited offer</p>
-                  <p style="display: none">
-                    Hot days - 50% Get ready for summer!
-                  </p>
-                </div>
-                <div class="banners-secondPart d-flex justify-content-between">
-                  <i class="bi bi-clock"></i>
-                  <p class="ml-2">Mon - Fri : 09am to 06pm</p>
-                  <i class="bi bi-telephone mr-2"></i>
-                  <p>+1 800 789 0000</p>
-                </div>
+        <div class="navbar d-flex">
+          <div class="logo col-3">
+            <a href="#">
+              <img src="./assets/images/logo.png" alt="logo" />
+            </a>
+          </div>
+          <div class="header-nav">
+            <div class="banners d-flex justify-content-between">
+              <div class="banners-firstPart">
+                <p>Save up to 40% Hurry Limited offer</p>
+                <p style="display: none">
+                  Hot days - 50% Get ready for summer!
+                </p>
               </div>
-              <div class="header-main">
-                <div class="header-menu pt-3 col-6">
-                  <ul class="d-flex justify-content-around">
-                    <li><a href="">HOME</a></li>
-                    <li><a href="">VEHICLES</a></li>
-                    <li><a href="">SHOP</a></li>
-                    <li><a href="">BLOG</a></li>
-                    <li><a href="">CONTACT US</a></li>
-                  </ul>
-                </div>
-                <div class="header-right col-4 pt-3">
-                  <div class="search-section">
-                    <form
-                      action=""
-                      method="get"
-                      class="d-flex justify-content-between"
-                    >
-                      <input
-                        type="text"
-                        placeholder="Search here..."
-                        class="search-box"
-                      />
-                      <button type="submit" class="search-button">
-                        <i class="bi bi-search"></i>
-                      </button>
-                    </form>
-                  </div>
-                  <div class="basket-section">
-                    <a href="" class="basket">
-                      <i class="bi bi-cart"></i>
-                      <span class="basket-number">0</span>
-                    </a>
-                  </div>
-                  <div class="hamburger-section">
-                    <a href=""><i class="bi bi-list"></i></a>
-                  </div>
-                </div>
+              <div class="banners-secondPart d-flex justify-content-between">
+                <i class="bi bi-clock"></i>
+                <p class="ml-2">Mon - Fri : 09am to 06pm</p>
+                <i class="bi bi-telephone mr-2"></i>
+                <p>+1 800 789 0000</p>
               </div>
             </div>
-          </div>
-        </div>
-      </div>
-      <!-- Cart Menu START -->
-      <div class="cart-menu">
-        <div class="cart-header">
-          <div>
-            <span class="menu-count">1</span>
-            <span class="menu-title">item,</span>
-          </div>
-          <div class="d-flex">
-            <span class="menu-price-currency">£</span>
-            <span class="menu-price-count">36</span>
-          </div>
-        </div>
-        <div class="product-menu">
-          <ul>
-            <li class="product-list">
-              <div>
-                <a href="#"
-                  ><img src="./assets/images/p1.jpg" class="img" alt=""
-                /></a>
-                <a href="" class="deleteimage">
-                  <span class="mini-cart-item-delete"
-                    ><i class="bi bi-x"></i
-                  ></span>
-                </a>
+            <div class="header-main">
+              <div class="header-menu pt-4 col-6 mt-3">
+                <ul class="d-flex justify-content-around">
+                  <li><a href="">HOME</a></li>
+                  <li><a href="">VEHICLES</a></li>
+                  <li><a href="">SHOP</a></li>
+                  <li><a href="">BLOG</a></li>
+                  <li><a href="">CONTACT US</a></li>
+                </ul>
               </div>
-              <div class="item-details">
-                <span class="item-count">1</span>
-                <span>x</span>
-                <span class="item-price">£36</span>
-                <p class="item-name">Mercedes-Benz</p>
-              </div>
-            </li>
-          </ul>
+              <div class="header-right col-4 pt-3">
+                <div class="search-section">
+                  <form
+                    action=""
+                    method="get"
+                    class="d-flex justify-content-between"
+                  >
+                    <input
+                      type="text"
+                      placeholder="Search here..."
+                      class="search-box"
+                    />
+                    <button type="submit" class="search-button">
+                      <i class="bi bi-search"></i>
+                    </button>
+                  </form>
+                </div>
+                <div class="basket-section">
+                  <a href="" class="basket">
+                    <i class="bi bi-cart"></i>
+                    <span class="basket-number">0</span>
+                  </a>
+                  <!-- Cart Menu START -->
+                  <div class="cart-menu">
+                    <div class="cart-header">
+                      <div>
+                        <span class="menu-count">1</span>
+                        <span class="menu-title">item,</span>
+                      </div>
+                      <div class="d-flex">
+                        <span class="menu-price-currency">£</span>
+                        <span class="menu-price-count">36</span>
+                      </div>
+                    </div>
+                    <div class="product-menu">
+                      <ul>
+                        <li class="product-list">
+                          <div>
+                            <a href="#"
+                              ><img
+                                src="./assets/images/p1.jpg"
+                                class="img"
+                                alt=""
+                            /></a>
+                            <a href="" class="deleteimage">
+                              <span class="mini-cart-item-delete"
+                                ><i class="bi bi-x"></i
+                              ></span>
+                            </a>
+                          </div>
+                          <div class="item-details">
+                            <span class="item-count">1</span>
+                            <span>x</span>
+                            <span class="item-price">£36</span>
+                            <p class="item-name">Mercedes-Benz</p>
+                          </div>
+                        </li>
+                      </ul>
 
-          <div class="cart-buttons">
-            <a href="#">View Cart</a>
-            <a href="#">Checkout</a>
+                      <div class="cart-buttons">
+                        <a href="#">View Cart</a>
+                        <a href="#">Checkout</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="hamburger-section">
+                  <a href=""><i class="bi bi-list"></i></a>
+
+                  <!-- User Menu START -->
+
+                  <div class="drop-menu user-menu">
+                    <ul>
+                      <li><a href="">Submit Car</a></li>
+                      <li><a href="">My Cars</a></li>
+                      <li><a href="">My Account</a></li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
-      </div>
-
-      <!-- User Menu START -->
-
-      <div class="drop-menu user-menu">
-        <ul>
-          <li><a href="">Submit Car</a></li>
-          <li><a href="">My Cars</a></li>
-          <li><a href="">My Account</a></li>
-        </ul>
       </div>
     </header>
+
+    <!-- Slider AREA START -->
+    <section class="slider-section">
+      <div id="myCarousel" class="carousel slide" data-ride="carousel">
+        <!-- Indicators -->
+        <ol class="carousel-indicators">
+          <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+          <li data-target="#myCarousel" data-slide-to="1"></li>
+        </ol>
+
+        <!-- Wrapper for slides -->
+        <div class="carousel-inner">
+          <div class="item active">
+            <img
+              src="./assets/images/slider-1.jpg"
+              alt="Car Image"
+              style="width: 100%"
+            />
+          </div>
+
+          <div class="item">
+            <img
+              src="./assets/images/slider-2.jpg"
+              alt="Car Image"
+              style="width: 100%"
+            />
+          </div>
+        </div>
+
+        <!-- Left and right controls -->
+        <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+          <span class="glyphicon glyphicon-chevron-left"></span>
+          <span class="sr-only">Previous</span>
+        </a>
+        <a class="right carousel-control" href="#myCarousel" data-slide="next">
+          <span class="glyphicon glyphicon-chevron-right"></span>
+          <span class="sr-only">Next</span>
+        </a>
+      </div>
+    </section>
 
     <!-- FOOTER AREA START -->
     <footer class="footer-section">
       <div class="container-fluid">
-        <div class="row">
-          <div class="footer d-flex justify-content-between">
-            <div class="col-3">
-              <h4>SHOWROOM</h4>
-              <ul>
-                <li>
-                  <p>KlbTheme, 789 Main rd, Anytown, CA 12345 USA</p>
-                </li>
-                <li>+1 800 789 0000</li>
-                <li><a href="">Harrier@klbtheme.com</a></li>
-                <li>Mon – Fri : 09am to 06pm</li>
-              </ul>
-            </div>
-            <div class="col-3">
-              <h4>QUICK LINKS</h4>
-              <ul>
-                <li><a href="">FAQs</a></li>
-                <li><a href="">Payment</a></li>
-                <li><a href="">Shipment</a></li>
-                <li><a href="">Where is my order?</a></li>
-                <li><a href="">Return Policy</a></li>
-              </ul>
-            </div>
-            <div class="col-3">
-              <h4>STYLE ADVISOR</h4>
-              <ul>
-                <li><a href="">My account</a></li>
-                <li><a href=""> Information</a></li>
-                <li><a href=""> Addresses</a></li>
-                <li><a href=""> Discount</a></li>
-                <li><a href=""> Orders History</a></li>
-                <li><a href=""> Additional Information</a></li>
-              </ul>
-            </div>
-            <div class="col-3">
-              <h4>INFORMATION</h4>
-              <ul>
-                <li><a href="">Site Map</a></li>
-                <li><a href="">Search Terms</a></li>
-                <li><a href="">Advanced Search</a></li>
-                <li><a href="">About Us</a></li>
-                <li><a href="">Contact Us</a></li>
-                <li><a href="">Suppliers</a></li>
-              </ul>
-            </div>
+        <div class="footer d-flex justify-content-between">
+          <div class="col-3">
+            <h4>SHOWROOM</h4>
+            <ul>
+              <li>
+                <p>KlbTheme, 789 Main rd, Anytown, CA 12345 USA</p>
+              </li>
+              <li>+1 800 789 0000</li>
+              <li><a href="">Harrier@klbtheme.com</a></li>
+              <li>Mon – Fri : 09am to 06pm</li>
+            </ul>
+          </div>
+          <div class="col-3">
+            <h4>QUICK LINKS</h4>
+            <ul>
+              <li><a href="">FAQs</a></li>
+              <li><a href="">Payment</a></li>
+              <li><a href="">Shipment</a></li>
+              <li><a href="">Where is my order?</a></li>
+              <li><a href="">Return Policy</a></li>
+            </ul>
+          </div>
+          <div class="col-3">
+            <h4>STYLE ADVISOR</h4>
+            <ul>
+              <li><a href="">My account</a></li>
+              <li><a href=""> Information</a></li>
+              <li><a href=""> Addresses</a></li>
+              <li><a href=""> Discount</a></li>
+              <li><a href=""> Orders History</a></li>
+              <li><a href=""> Additional Information</a></li>
+            </ul>
+          </div>
+          <div class="col-3">
+            <h4>INFORMATION</h4>
+            <ul>
+              <li><a href="">Site Map</a></li>
+              <li><a href="">Search Terms</a></li>
+              <li><a href="">Advanced Search</a></li>
+              <li><a href="">About Us</a></li>
+              <li><a href="">Contact Us</a></li>
+              <li><a href="">Suppliers</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="footer-end d-flex justify-content-between">
+          <div class="col-4">
+            <ul class="list">
+              <li class="fb">
+                <a href=""><i class="bi bi-facebook"></i></a>
+              </li>
+              <li class="twit">
+                <a href=""><i class="bi bi-twitter"></i></a>
+              </li>
+              <li class="google">
+                <a href=""><i class="bi bi-google"></i></a>
+              </li>
+              <li class="rss">
+                <a href=""><i class="bi bi-rss"></i></a>
+              </li>
+            </ul>
+          </div>
+          <div class="col-5">
+            <p>© 2021 KlbTheme. All Rights Reserved.</p>
+          </div>
+          <div class="col-3">
+            <img src="./assets/images/payment-1.png" alt="" />
+            <img src="./assets/images/payment-2.png" alt="" />
+            <img src="./assets/images/payment-3.png" alt="" />
+            <img src="./assets/images/payment-4.png" alt="" />
           </div>
         </div>
       </div>
     </footer>
+    -->
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script src="./assets/js/main.js"></script>

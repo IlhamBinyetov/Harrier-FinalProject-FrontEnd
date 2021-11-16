@@ -4,6 +4,8 @@
   z-index: -1;
 
   .footer {
+    padding-bottom: 5%;
+    border-bottom: 1px solid white;
     h4 {
       padding: 30px 10px;
       font-size: 20px;
@@ -25,6 +27,49 @@
             color: #fbe122;
           }
         }
+      }
+    }
+  }
+
+  .footer-end {
+    padding-top: 30px;
+    padding-bottom: 10px;
+    .list {
+      display: flex;
+      .fb a {
+        display: inline-block;
+        background: blue;
+        color: white;
+        font-size: 20px;
+        padding: 10px;
+        border-radius: 10px;
+      }
+      .twit a {
+        display: inline-block;
+        background: #359bed;
+        color: white;
+        font-size: 20px;
+        padding: 10px;
+        border-radius: 10px;
+      }
+      .google a {
+        display: inline-block;
+        background: #e33729;
+        color: white;
+        font-size: 20px;
+        padding: 10px;
+        border-radius: 10px;
+      }
+      .rss a {
+        display: inline-block;
+        background: #fd9f13;
+        color: white;
+        font-size: 20px;
+        padding: 10px;
+        border-radius: 10px;
+      }
+      li {
+        margin-left: 15px;
       }
     }
   }

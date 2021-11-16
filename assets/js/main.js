@@ -14,9 +14,9 @@ $(document).ready(function () {
         function () {
             $(".cart-menu").show(1000);
         },
-        // function () {
-        //     $(".cart-menu").hide();
-        // },
+        function () {
+            $(".cart-menu").hide();
+        },
     );
 
     $(".hamburger-section").hover(
@@ -28,5 +28,4 @@ $(document).ready(function () {
         },
 
     )
-
 });
