@@ -7707,3 +7707,8 @@ body {
       cursor: pointer; }
       .slider-section .commerce-part button:hover {
         color: black; }
+
+.banner-section {
+  padding: 25px; }
+  .banner-section .images img {
+    width: 45%; }

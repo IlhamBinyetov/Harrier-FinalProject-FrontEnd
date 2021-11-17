@@ -71,3 +71,12 @@
     }
   }
 }
+
+.banner-section {
+  padding: 25px;
+  & .images {
+    img {
+      width: 45%;
+    }
+  }
+}
