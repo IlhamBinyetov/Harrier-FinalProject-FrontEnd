@@ -14,8 +14,15 @@
       rel="stylesheet"
       href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"
     />
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <link
+      href="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/css/select2.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/select2@4.1.0-beta.1/dist/css/select2.min.css"
+      rel="stylesheet"
+    />
+
     <title>Document</title>
   </head>
   <body>
@@ -179,6 +186,106 @@
           <span class="sr-only">Next</span>
         </a>
       </div>
+
+      <div class="filter-part">
+        <form action="">
+          <label for="">FIND YOUR RIGHT CAR</label>
+          <br />
+          <br />
+
+          <select class="sel-example form-control" id="sel1">
+            <option value="0">Select Make</option>
+            <option value="1">Acura</option>
+            <option value="2">Audi</option>
+            <option value="3">BMW</option>
+            <option value="4">Chevrolet</option>
+            <option value="5">Hyundai</option>
+            <option value="6">Kia</option>
+            <option value="7">Mazda</option>
+            <option value="8">Mercedes-Benz</option>
+            <option value="9">Nissan</option>
+            <option value="10">Toyota</option>
+          </select>
+
+          <select name="" id="sel2" class="sel-example form-control">
+            <option value="">Select Model</option>
+            <option data-val="1">CL</option>
+            <option data-val="1">IlX</option>
+            <option data-val="1">Ilx Hybrid</option>
+            <option data-val="1">Integra</option>
+            <option data-val="2">A3</option>
+            <option data-val="2">A5</option>
+            <option data-val="2">A7</option>
+            <option data-val="2">A8</option>
+            <option data-val="3">X1</option>
+            <option data-val="3">X3</option>
+            <option data-val="3">X5</option>
+            <option data-val="3">X6</option>
+            <option data-val="3">X7</option>
+            <option data-val="3">Z8</option>
+            <option data-val="4">Cruze</option>
+            <option data-val="4">Aveo</option>
+            <option data-val="4">Volt</option>
+            <option data-val="5">Elantra</option>
+            <option data-val="5">Sonata</option>
+            <option data-val="5">Tucson</option>
+            <option data-val="6">Sorento</option>
+            <option data-val="6">Optima</option>
+            <option data-val="6">Cerato</option>
+            <option data-val="7">CX-3</option>
+            <option data-val="7">CX-5</option>
+            <option data-val="7">Mazda5</option>
+            <option data-val="8">GL</option>
+            <option data-val="8">Sprinter</option>
+            <option data-val="8">E220</option>
+            <option data-val="9">Sunny</option>
+            <option data-val="9">X-Trail</option>
+            <option data-val="9">Altima</option>
+            <option data-val="10">Corolla</option>
+            <option data-val="10">Prado</option>
+            <option data-val="10">Land Cruiser</option>
+          </select>
+
+          <select name="" id="" class="sel-example form-control">
+            <option value="0">Select Max Price</option>
+            <option value="1">$500</option>
+            <option value="2">$1000</option>
+            <option value="3">$2000</option>
+            <option value="4">$3000</option>
+            <option value="5">$10000</option>
+          </select>
+
+          <select name="" id="" class="sel-example form-control">
+            <option value="0">Select Min Year</option>
+            <option value="1">2021</option>
+            <option value="2">2020</option>
+            <option value="3">2019</option>
+            <option value="4">2018</option>
+            <option value="5">2017</option>
+          </select>
+
+          <select name="" id="" class="sel-example form-control">
+            <option value="0">Select Max Mileage</option>
+            <option value="1">2500 miles</option>
+            <option value="2">5000 miles</option>
+            <option value="3">7500 miles</option>
+            <option value="4">10000 miles</option>
+            <option value="5">15000 miles</option>
+          </select>
+
+          <button type="submit" class="btn btn-primary button">
+            Search Vehicle
+          </button>
+        </form>
+      </div>
+
+      <div class="commerce-part">
+        <h6>TOP BRANDS 2019</h6>
+        <h4>MODERN-CLASSIC</h4>
+        <h4>INCREDIBLE</h4>
+        <p>Get 40% Off On Selected Items</p>
+        <button>BOOK APPOINTMENT</button>
+      </div>
     </section>
 
     <!-- FOOTER AREA START -->
@@ -258,9 +365,11 @@
         </div>
       </div>
     </footer>
-    -->
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
     <script src="./assets/js/main.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-beta.1/dist/js/select2.min.js"></script>
   </body>
 </html>
