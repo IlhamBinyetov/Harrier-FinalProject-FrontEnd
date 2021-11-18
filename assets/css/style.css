@@ -7798,3 +7798,58 @@ body {
             text-align: center; }
           .banner-section .deals .deals-header .timer ul .seperator {
             margin-left: 20px; }
+
+.brands-section {
+  position: relative;
+  padding-left: 25 px;
+  padding-right: 25 px;
+  padding-top: 25px; }
+  .brands-section .brands-types {
+    padding: 28px;
+    margin-bottom: 30px;
+    background-color: white;
+    margin-left: 10px;
+    margin-right: 8px; }
+    .brands-section .brands-types .brands-slide {
+      display: flex;
+      justify-content: space-between;
+      background-color: yellow;
+      border-bottom: 1px #e5e5e5 solid; }
+      .brands-section .brands-types .brands-slide .brand-header {
+        color: #fff;
+        background: #23292e;
+        letter-spacing: 2px;
+        text-transform: uppercase;
+        font-size: 22px;
+        font-weight: 500;
+        min-width: 500px;
+        padding: 15px; }
+    .brands-section .brands-types .brand-pics {
+      padding-top: 20px;
+      display: flex;
+      justify-content: space-evenly;
+      border-left: 1px #e5e5e5 solid;
+      border-right: 1px #e5e5e5 solid;
+      border-bottom: 1px #e5e5e5 solid;
+      padding-left: 70px; }
+      .brands-section .brands-types .brand-pics div {
+        display: flex;
+        align-items: center; }
+    .brands-section .brands-types .slick-next {
+      position: absolute;
+      top: -25%;
+      right: 5%; }
+      .brands-section .brands-types .slick-next:before {
+        font-size: 30px;
+        color: black;
+        top: -30%;
+        right: 2%; }
+    .brands-section .brands-types .slick-prev {
+      position: absolute;
+      top: -25%;
+      left: 90%; }
+      .brands-section .brands-types .slick-prev:before {
+        font-size: 30px;
+        color: black;
+        top: -30%;
+        right: 2%; }

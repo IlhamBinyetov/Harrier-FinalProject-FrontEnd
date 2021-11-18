@@ -65,6 +65,15 @@ $(document).ready(function () {
         touchMove: false
     });
 
+    $('.brand-pics').slick({
+        dots: false,
+        slidesToShow: 6,
+        slidesToScroll: 1,
+        touchMove: false
+    });
+
+
+
     // $('#countdown').countdown({
     //     date: '19/11/2022 23:59:59'
     // }, function () {

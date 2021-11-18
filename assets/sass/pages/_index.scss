@@ -191,3 +191,73 @@
     }
   }
 }
+
+.brands-section {
+  position: relative;
+  padding-left: 25 px;
+  padding-right: 25 px;
+  padding-top: 25px;
+
+  & .brands-types {
+    padding: 28px;
+    margin-bottom: 30px;
+    background-color: white;
+    margin-left: 10px;
+    margin-right: 8px;
+
+    & .brands-slide {
+      display: flex;
+      justify-content: space-between;
+      background-color: yellow;
+      border-bottom: 1px #e5e5e5 solid;
+
+      & .brand-header {
+        color: #fff;
+        background: #23292e;
+        letter-spacing: 2px;
+        text-transform: uppercase;
+        font-size: 22px;
+        font-weight: 500;
+        min-width: 500px;
+        padding: 15px;
+      }
+    }
+
+    & .brand-pics {
+      padding-top: 20px;
+      display: flex;
+      justify-content: space-evenly;
+      border-left: 1px #e5e5e5 solid;
+      border-right: 1px #e5e5e5 solid;
+      border-bottom: 1px #e5e5e5 solid;
+      padding-left: 70px;
+      div {
+        display: flex;
+        align-items: center;
+      }
+    }
+
+    .slick-next {
+      position: absolute;
+      top: -25%;
+      right: 5%;
+      &:before {
+        font-size: 30px;
+        color: black;
+        top: -30%;
+        right: 2%;
+      }
+    }
+    .slick-prev {
+      position: absolute;
+      top: -25%;
+      left: 90%;
+      &:before {
+        font-size: 30px;
+        color: black;
+        top: -30%;
+        right: 2%;
+      }
+    }
+  }
+}
