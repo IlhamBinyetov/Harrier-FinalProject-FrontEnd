@@ -7566,7 +7566,7 @@ body {
         margin-left: 5px; }
         .header .navbar .header-right .hamburger-section .user-menu {
           padding-top: 15px;
-          display: block;
+          display: none;
           width: 200px;
           position: absolute;
           top: 80%;
@@ -7678,7 +7678,9 @@ body {
       border-color: #121212 #121212 #ecd213;
       border-style: none none solid;
       border-width: 0 px 0 px 3 px;
-      color: black; }
+      color: black;
+      font-size: 20px;
+      text-align: center; }
   .slider-section .commerce-part {
     position: absolute;
     top: 20%;
@@ -7709,6 +7711,90 @@ body {
         color: black; }
 
 .banner-section {
-  padding: 25px; }
+  position: relative;
+  padding-left: 25 px;
+  padding-right: 25 px;
+  padding-top: 25px; }
+  .banner-section .car-types {
+    padding: 28px;
+    margin-bottom: 30px;
+    background-color: white;
+    margin-left: 10px;
+    margin-right: 8px; }
+    .banner-section .car-types .cars-slide {
+      display: flex;
+      justify-content: space-between;
+      background-color: yellow;
+      border-bottom: 1px #e5e5e5 solid; }
+      .banner-section .car-types .cars-slide .car-header {
+        color: #fff;
+        background: #23292e;
+        letter-spacing: 2px;
+        text-transform: uppercase;
+        font-size: 22px;
+        font-weight: 500;
+        min-width: 500px;
+        padding: 15px; }
+    .banner-section .car-types .car-pics {
+      padding-top: 20px;
+      display: flex;
+      justify-content: space-evenly;
+      border-left: 1px #e5e5e5 solid;
+      border-right: 1px #e5e5e5 solid;
+      border-bottom: 1px #e5e5e5 solid;
+      padding-left: 70px; }
+      .banner-section .car-types .car-pics div {
+        display: flex;
+        align-items: center; }
+      .banner-section .car-types .car-pics .car-names {
+        margin-top: 10px;
+        text-align: center; }
+    .banner-section .car-types .slick-next {
+      position: absolute;
+      top: -25%;
+      right: 5%; }
+      .banner-section .car-types .slick-next:before {
+        font-size: 30px;
+        color: black;
+        top: -30%;
+        right: 2%; }
+    .banner-section .car-types .slick-prev {
+      position: absolute;
+      top: -25%;
+      left: 90%; }
+      .banner-section .car-types .slick-prev:before {
+        font-size: 30px;
+        color: black;
+        top: -30%;
+        right: 2%; }
   .banner-section .images img {
     width: 45%; }
+  .banner-section .deals {
+    margin-top: 30px;
+    padding-left: 33px;
+    padding-right: 33px;
+    margin-bottom: 30px; }
+    .banner-section .deals .deals-header {
+      display: flex;
+      background-color: #23292e; }
+      .banner-section .deals .deals-header .first-element {
+        background-color: yellow; }
+        .banner-section .deals .deals-header .first-element h2 {
+          font-size: 20px;
+          font-weight: 500;
+          color: black;
+          letter-spacing: 1px;
+          text-transform: uppercase;
+          padding-left: 20px; }
+      .banner-section .deals .deals-header .timer {
+        padding-left: 20%; }
+        .banner-section .deals .deals-header .timer ul {
+          display: flex;
+          justify-content: space-between;
+          align-items: centers;
+          margin-top: 10px; }
+          .banner-section .deals .deals-header .timer ul li {
+            color: white;
+            text-align: center; }
+          .banner-section .deals .deals-header .timer ul .seperator {
+            margin-left: 20px; }
