@@ -9,6 +9,7 @@
 .header {
   position: relative;
   height: 109px;
+  background-color: white;
   .navbar {
     box-sizing: border-box;
     .logo {
@@ -52,6 +53,7 @@
       .header-main {
         display: flex;
         justify-content: space-around;
+
         .header-menu {
           ul {
             li {

@@ -7415,7 +7415,8 @@ body {
 
 .header {
   position: relative;
-  height: 109px; }
+  height: 109px;
+  background-color: white; }
   .header .navbar {
     box-sizing: border-box; }
     .header .navbar .logo {
@@ -7654,6 +7655,9 @@ body {
   margin: 0;
   padding: 0; }
 
+body {
+  background-color: #e5e5e5; }
+
 .slider-section {
   position: relative;
   z-index: 0; }
@@ -7716,11 +7720,10 @@ body {
   padding-right: 25 px;
   padding-top: 25px; }
   .banner-section .car-types {
-    padding: 28px;
-    margin-bottom: 30px;
+    width: 95%;
+    margin: auto;
     background-color: white;
-    margin-left: 10px;
-    margin-right: 8px; }
+    box-shadow: 0 4px 2px -2px gray; }
     .banner-section .car-types .cars-slide {
       display: flex;
       justify-content: space-between;
@@ -7767,13 +7770,15 @@ body {
         color: black;
         top: -30%;
         right: 2%; }
-  .banner-section .images img {
-    width: 45%; }
+  .banner-section .images {
+    margin-top: 6%;
+    margin-bottom: 6%; }
+    .banner-section .images img {
+      width: 45%; }
   .banner-section .deals {
-    margin-top: 30px;
-    padding-left: 33px;
-    padding-right: 33px;
-    margin-bottom: 30px; }
+    width: 95%;
+    margin: auto;
+    box-shadow: 0 4px 2px -2px gray; }
     .banner-section .deals .deals-header {
       display: flex;
       background-color: #23292e; }
@@ -7798,14 +7803,346 @@ body {
             text-align: center; }
           .banner-section .deals .deals-header .timer ul .seperator {
             margin-left: 20px; }
+    .banner-section .deals .deals-footer {
+      display: flex;
+      padding-top: 20px;
+      position: relative;
+      background-color: white; }
+      .banner-section .deals .deals-footer .car-item {
+        z-index: 0;
+        padding: 10px;
+        border-right: 1px #eaeaea solid;
+        position: relative;
+        position: relative; }
+        .banner-section .deals .deals-footer .car-item .seperator {
+          background: #ed6663;
+          width: 10%;
+          margin: 0 auto;
+          padding: 2px;
+          height: 5px; }
+        .banner-section .deals .deals-footer .car-item .item-info {
+          position: relative; }
+          .banner-section .deals .deals-footer .car-item .item-info img {
+            width: 100%; }
+          .banner-section .deals .deals-footer .car-item .item-info span {
+            position: absolute;
+            font-size: 10.5px;
+            color: #fff;
+            background: #ed6663;
+            text-transform: uppercase;
+            font-weight: 400;
+            height: 24 px;
+            border-radius: 10%;
+            line-height: 20px;
+            z-index: 10;
+            padding: 3px;
+            letter-spacing: 1px;
+            top: 4%;
+            left: 2%; }
+          .banner-section .deals .deals-footer .car-item .item-info p {
+            padding-top: 30px;
+            text-align: center; }
+        .banner-section .deals .deals-footer .car-item .item-price {
+          padding-top: 10px; }
+          .banner-section .deals .deals-footer .car-item .item-price p {
+            text-align: center;
+            font-weight: 500;
+            font-size: 22px;
+            color: #121212; }
+        .banner-section .deals .deals-footer .car-item .other-info {
+          border-top: 1px #eaeaea solid;
+          color: #777;
+          padding-top: 40px; }
+          .banner-section .deals .deals-footer .car-item .other-info .infos {
+            text-align: center; }
+            .banner-section .deals .deals-footer .car-item .other-info .infos p {
+              padding-top: 5px; }
+        .banner-section .deals .deals-footer .car-item .sold-pic {
+          position: absolute;
+          top: 10%;
+          left: 30%; }
+          .banner-section .deals .deals-footer .car-item .sold-pic img {
+            width: 70%; }
+        .banner-section .deals .deals-footer .car-item .hover-items {
+          display: none;
+          position: absolute;
+          top: 20%;
+          left: 12%;
+          z-index: 1000; }
+          .banner-section .deals .deals-footer .car-item .hover-items .rhombus {
+            margin-left: 20px;
+            height: 50px;
+            width: 50px;
+            border: 1px solid black;
+            transform: rotate(45deg);
+            background-color: white; }
+            .banner-section .deals .deals-footer .car-item .hover-items .rhombus:hover {
+              background-color: #121212; }
+              .banner-section .deals .deals-footer .car-item .hover-items .rhombus:hover a {
+                color: white; }
+            .banner-section .deals .deals-footer .car-item .hover-items .rhombus div {
+              font-size: 30px;
+              text-align: center;
+              margin: 0 auto;
+              transform: rotate(-45deg); }
+              .banner-section .deals .deals-footer .car-item .hover-items .rhombus div a {
+                padding: 5px;
+                color: black; }
+                .banner-section .deals .deals-footer .car-item .hover-items .rhombus div a i {
+                  font-size: 25px; }
+        .banner-section .deals .deals-footer .car-item:hover .hover-items {
+          display: flex; }
+      .banner-section .deals .deals-footer .slick-next {
+        position: absolute;
+        top: -10%;
+        right: 5%; }
+        .banner-section .deals .deals-footer .slick-next:before {
+          font-size: 30px;
+          color: white;
+          top: -30%;
+          right: 2%; }
+      .banner-section .deals .deals-footer .slick-prev {
+        position: absolute;
+        top: -10%;
+        left: 90%; }
+        .banner-section .deals .deals-footer .slick-prev:before {
+          font-size: 30px;
+          color: white;
+          top: -30%;
+          right: 2%; }
+
+.testimonial-section {
+  margin-top: 7%;
+  background-image: url(https://klbtheme.com/harrier/wp-content/uploads/2019/05/testimonials-bg-img1.jpg?id=850) !important;
+  background-repeat: no-repeat, repeat;
+  height: 800px; }
+  .testimonial-section .slideshow-container {
+    position: relative; }
+    .testimonial-section .slideshow-container .mySlides {
+      display: none;
+      padding: 80px;
+      text-align: center; }
+      .testimonial-section .slideshow-container .mySlides img {
+        border-radius: 50%;
+        margin-bottom: 30px; }
+      .testimonial-section .slideshow-container .mySlides .desc {
+        margin: auto;
+        width: 70%;
+        color: white;
+        font-size: 20px; }
+      .testimonial-section .slideshow-container .mySlides .author {
+        margin-top: 15px;
+        color: white;
+        font-size: 18px; }
+        .testimonial-section .slideshow-container .mySlides .author span {
+          color: yellow;
+          margin-right: 20px; }
+    .testimonial-section .slideshow-container .dot-container {
+      text-align: center;
+      padding: 20px; }
+      .testimonial-section .slideshow-container .dot-container .dot {
+        cursor: pointer;
+        height: 15px;
+        width: 15px;
+        margin: 0 2px;
+        background-color: gray;
+        border-radius: 50%;
+        display: inline-block;
+        transition: background-color 0.6s ease; }
+        .testimonial-section .slideshow-container .dot-container .dot .active, .testimonial-section .slideshow-container .dot-container .dot:hover {
+          background-color: white; }
+
+.best-seller {
+  margin-bottom: 7%; }
+  .best-seller .deals {
+    margin-top: 30px;
+    padding-left: 33px;
+    padding-right: 33px;
+    margin-bottom: 30px; }
+    .best-seller .deals .deals-header {
+      display: flex;
+      background-color: #35525c;
+      height: 80px; }
+      .best-seller .deals .deals-header .first-element {
+        background-color: #50b2fc; }
+        .best-seller .deals .deals-header .first-element h2 {
+          margin-top: 30px;
+          font-size: 20px;
+          font-weight: 500;
+          color: black;
+          letter-spacing: 1px;
+          text-transform: uppercase;
+          padding-left: 20px; }
+    .best-seller .deals .deals-footer {
+      display: flex;
+      padding-top: 20px;
+      position: relative;
+      background-color: white; }
+      .best-seller .deals .deals-footer .car-item {
+        z-index: 0;
+        padding: 10px;
+        border-right: 1px #eaeaea solid;
+        position: relative;
+        position: relative; }
+        .best-seller .deals .deals-footer .car-item .seperator {
+          background: #ed6663;
+          width: 10%;
+          margin: 0 auto;
+          padding: 2px;
+          height: 5px; }
+        .best-seller .deals .deals-footer .car-item .item-info {
+          position: relative; }
+          .best-seller .deals .deals-footer .car-item .item-info img {
+            width: 100%; }
+          .best-seller .deals .deals-footer .car-item .item-info span {
+            position: absolute;
+            font-size: 10.5px;
+            color: #fff;
+            background: #ed6663;
+            text-transform: uppercase;
+            font-weight: 400;
+            height: 24 px;
+            border-radius: 10%;
+            line-height: 20px;
+            z-index: 10;
+            padding: 3px;
+            letter-spacing: 1px;
+            top: 4%;
+            left: 2%; }
+          .best-seller .deals .deals-footer .car-item .item-info p {
+            padding-top: 30px;
+            text-align: center; }
+        .best-seller .deals .deals-footer .car-item .item-price {
+          padding-top: 10px; }
+          .best-seller .deals .deals-footer .car-item .item-price p {
+            text-align: center;
+            font-weight: 500;
+            font-size: 22px;
+            color: #121212; }
+        .best-seller .deals .deals-footer .car-item .other-info {
+          border-top: 1px #eaeaea solid;
+          color: #777;
+          padding-top: 40px; }
+          .best-seller .deals .deals-footer .car-item .other-info .infos {
+            text-align: center; }
+            .best-seller .deals .deals-footer .car-item .other-info .infos p {
+              padding-top: 5px; }
+        .best-seller .deals .deals-footer .car-item .hover-items {
+          display: none;
+          position: absolute;
+          top: 20%;
+          left: 12%;
+          z-index: 1000; }
+          .best-seller .deals .deals-footer .car-item .hover-items .rhombus {
+            margin-left: 20px;
+            height: 50px;
+            width: 50px;
+            border: 1px solid black;
+            transform: rotate(45deg);
+            background-color: white; }
+            .best-seller .deals .deals-footer .car-item .hover-items .rhombus:hover {
+              background-color: #121212; }
+              .best-seller .deals .deals-footer .car-item .hover-items .rhombus:hover a {
+                color: white; }
+            .best-seller .deals .deals-footer .car-item .hover-items .rhombus div {
+              font-size: 30px;
+              text-align: center;
+              margin: 0 auto;
+              transform: rotate(-45deg); }
+              .best-seller .deals .deals-footer .car-item .hover-items .rhombus div a {
+                padding: 5px;
+                color: black; }
+                .best-seller .deals .deals-footer .car-item .hover-items .rhombus div a i {
+                  font-size: 25px; }
+        .best-seller .deals .deals-footer .car-item:hover .hover-items {
+          display: flex; }
+      .best-seller .deals .deals-footer .slick-next {
+        position: absolute;
+        top: -10%;
+        right: 5%; }
+        .best-seller .deals .deals-footer .slick-next:before {
+          font-size: 30px;
+          color: white;
+          top: -30%;
+          right: 2%; }
+      .best-seller .deals .deals-footer .slick-prev {
+        position: absolute;
+        top: -10%;
+        left: 90%; }
+        .best-seller .deals .deals-footer .slick-prev:before {
+          font-size: 30px;
+          color: white;
+          top: -30%;
+          right: 2%; }
+
+.blog-section {
+  background-color: white;
+  width: 95%;
+  margin: auto; }
+  .blog-section .blog-header {
+    display: flex;
+    background-color: white;
+    height: 80px;
+    border-bottom: 1px solid #ddd; }
+    .blog-section .blog-header .header-element {
+      background-color: #ed6663; }
+      .blog-section .blog-header .header-element h2 {
+        margin-top: 30px;
+        font-size: 20px;
+        font-weight: 500;
+        color: black;
+        letter-spacing: 1px;
+        text-transform: uppercase;
+        padding-left: 20px; }
+  .blog-section .blog-footer {
+    padding: 20px; }
+    .blog-section .blog-footer .footer-element {
+      padding: 20px; }
+      .blog-section .blog-footer .footer-element .blog-img {
+        position: relative; }
+        .blog-section .blog-footer .footer-element .blog-img .blog-date {
+          position: absolute;
+          background-color: yellow;
+          color: #121212;
+          font-weight: 500;
+          font-size: 18px;
+          text-transform: uppercase;
+          text-align: center;
+          letter-spacing: 1px;
+          width: 200px;
+          padding: 10px 15px;
+          top: 60%; }
+      .blog-section .blog-footer .footer-element .info a {
+        margin-left: 10px;
+        color: red; }
+        .blog-section .blog-footer .footer-element .info a:hover {
+          color: black; }
+      .blog-section .blog-footer .footer-element .info .poster-name {
+        color: red; }
+        .blog-section .blog-footer .footer-element .info .poster-name:hover {
+          color: black; }
+      .blog-section .blog-footer .footer-element .info .chat {
+        display: inline-block;
+        margin-left: 10px; }
+      .blog-section .blog-footer .footer-element .blog-name p {
+        font-size: 13px;
+        line-height: 24px;
+        padding-right: 10px; }
+      .blog-section .blog-footer .footer-element h3 a {
+        font-size: 23px;
+        font-weight: 500;
+        color: #333;
+        padding-bottom: 15px;
+        display: block;
+        letter-spacing: 0.5px;
+        line-height: 1.3em; }
 
 .brands-section {
+  padding-top: 7%;
   position: relative;
-  padding-left: 25 px;
-  padding-right: 25 px;
-  padding-top: 25px; }
+  margin: auto;
+  width: 96%; }
   .brands-section .brands-types {
-    padding: 28px;
     margin-bottom: 30px;
     background-color: white;
     margin-left: 10px;
@@ -7813,8 +8150,10 @@ body {
     .brands-section .brands-types .brands-slide {
       display: flex;
       justify-content: space-between;
-      background-color: yellow;
-      border-bottom: 1px #e5e5e5 solid; }
+      background-color: white;
+      border-bottom: 1px #e5e5e5 solid;
+      border-top: 1px #e5e5e5 solid;
+      border-right: 1px #e5e5e5 solid; }
       .brands-section .brands-types .brands-slide .brand-header {
         color: #fff;
         background: #23292e;
@@ -7834,7 +8173,8 @@ body {
       padding-left: 70px; }
       .brands-section .brands-types .brand-pics div {
         display: flex;
-        align-items: center; }
+        align-items: center;
+        border: 1 px #ff9d9d solid; }
     .brands-section .brands-types .slick-next {
       position: absolute;
       top: -25%;
@@ -7853,3 +8193,70 @@ body {
         color: black;
         top: -30%;
         right: 2%; }
+
+.features-section {
+  background-color: white;
+  padding: 30px; }
+  .features-section .features .feature-element .feature-first-p {
+    font-size: 26px;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+    color: #333;
+    margin: 0px; }
+  .features-section .features .feature-element .feature-second-p {
+    color: #999;
+    padding: 0px;
+    margin: 0px;
+    padding-top: 3px; }
+
+.newsletter-section {
+  background: url(https://klbtheme.com/harrier/wp-content/uploads/2019/05/newsletter-bg.jpg);
+  height: 300px; }
+  .newsletter-section h5 {
+    color: #fbe122;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin: auto;
+    padding-top: 30px;
+    font-weight: 500;
+    text-align: center;
+    font-size: 26px; }
+  .newsletter-section h4 {
+    margin-bottom: 23px;
+    display: block;
+    padding: 0px;
+    font-family: "Saira Condensed", sans-serif;
+    font-size: 30px;
+    letter-spacing: 1px;
+    font-weight: 600;
+    text-transform: uppercase;
+    color: #fff;
+    text-align: center; }
+  .newsletter-section .form-elements {
+    text-align: center; }
+    .newsletter-section .form-elements form input {
+      border: none;
+      background: #fff;
+      width: 30%;
+      display: inline;
+      color: #a7a7a7;
+      line-height: 20px;
+      background-color: #fff;
+      outline: none;
+      font-size: 14px;
+      font-family: open sans, sans-serif;
+      padding: 20px; }
+    .newsletter-section .form-elements form .subs-btn {
+      background-color: yellow;
+      color: black;
+      padding: 19px 28px 20px 28px;
+      cursor: pointer;
+      font-weight: 500;
+      font-size: 15px;
+      text-transform: uppercase;
+      border: none; }
+      .newsletter-section .form-elements form .subs-btn:hover {
+        background-color: #333;
+        color: white; }
+        .newsletter-section .form-elements form .subs-btn:hover .envelope {
+          color: white; }
