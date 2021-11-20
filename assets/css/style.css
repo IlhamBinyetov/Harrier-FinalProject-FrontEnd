@@ -7407,33 +7407,22 @@ body {
   font-weight: 400; }
 
 *,
-*::before,
-*::after {
+*:before,
+*:after {
   box-sizing: border-box;
   margin: 0;
   padding: 0; }
 
 .header {
   position: relative;
-  height: 109px;
-  background-color: white; }
+  margin: 0;
+  height: 112px; }
   .header .navbar {
-    box-sizing: border-box; }
+    width: 100%;
+    margin-bottom: 0; }
     .header .navbar .logo {
-      position: relative;
       padding: 40px;
-      z-index: 100; }
-      .header .navbar .logo::after {
-        position: absolute;
-        padding: 10px;
-        background-color: yellow;
-        width: 111%;
-        content: "";
-        transform: skew(-25deg);
-        height: 100%;
-        top: 0%;
-        left: -12%;
-        z-index: -1; }
+      background-color: yellow; }
     .header .navbar .header-nav {
       width: 100%; }
       .header .navbar .header-nav .banners {
@@ -7453,20 +7442,25 @@ body {
             margin-right: 5px; }
       .header .navbar .header-nav .header-main {
         display: flex;
-        justify-content: space-around; }
-        .header .navbar .header-nav .header-main .header-menu ul li {
-          position: relative; }
+        justify-content: space-around;
+        background-color: white; }
+        .header .navbar .header-nav .header-main .header-menu ul {
+          display: flex;
+          justify-content: space-around;
+          padding: 23px; }
           .header .navbar .header-nav .header-main .header-menu ul li a {
             color: black; }
-            .header .navbar .header-nav .header-main .header-menu ul li a:hover:after {
-              content: "";
-              position: absolute;
-              top: 150%;
-              right: 2%;
-              background-color: yellow;
-              width: 100%;
-              height: 10px;
-              border-radius: 10px; }
+            .header .navbar .header-nav .header-main .header-menu ul li a:hover {
+              position: relative; }
+              .header .navbar .header-nav .header-main .header-menu ul li a:hover:after {
+                content: "";
+                position: absolute;
+                top: 163%;
+                right: 2%;
+                background-color: yellow;
+                width: 100%;
+                height: 10px;
+                border-radius: 10px; }
     .header .navbar .header-right {
       display: flex;
       justify-content: space-evenly;
@@ -7490,7 +7484,8 @@ body {
         font-size: 16px;
         background-color: white; }
       .header .navbar .header-right .basket-section .basket {
-        position: relative; }
+        position: relative;
+        color: black; }
         .header .navbar .header-right .basket-section .basket span {
           background: #ed6663;
           display: inline-block;
@@ -7507,7 +7502,7 @@ body {
         display: none;
         width: 350px;
         position: absolute;
-        top: 80%;
+        top: 85%;
         right: 5%;
         z-index: 1000;
         background-color: white; }
@@ -7565,13 +7560,15 @@ body {
                 color: #fff; }
       .header .navbar .header-right .hamburger-section {
         margin-left: 5px; }
+        .header .navbar .header-right .hamburger-section a {
+          color: black; }
         .header .navbar .header-right .hamburger-section .user-menu {
           padding-top: 15px;
           display: none;
           width: 200px;
           position: absolute;
-          top: 80%;
-          right: 7%;
+          top: 85%;
+          right: 3%;
           z-index: 1000;
           line-height: 15px;
           background-color: white;
@@ -7649,6 +7646,157 @@ body {
         margin-left: 15px; }
 
 *,
+*:before,
+*:after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0; }
+
+body {
+  background-color: #e2e2e2; }
+
+.bg {
+  position: relative;
+  margin-bottom: 7%; }
+  .bg img {
+    width: 100%;
+    height: 200px; }
+  .bg h2 {
+    text-align: center;
+    position: absolute;
+    color: white;
+    margin: 0 auto;
+    top: 40%;
+    left: 0;
+    right: 0;
+    font-size: 40px;
+    font-weight: 700;
+    text-transform: uppercase; }
+
+.map iframe {
+  width: 100%;
+  padding: 20px; }
+
+.contact {
+  width: 95%;
+  margin: auto;
+  background-color: white; }
+  .contact .contact-header {
+    padding-top: 2%; }
+    .contact .contact-header h2 {
+      width: 95%;
+      color: #292929;
+      text-transform: uppercase;
+      border-bottom: 1px #eaeaea solid;
+      border-left: 2px #ed6663 solid;
+      font-size: 20px;
+      letter-spacing: 0.05em;
+      font-weight: 500;
+      padding: 20px 15px 15px 15px;
+      margin-left: 30px; }
+  .contact form {
+    padding: 30px; }
+    .contact form input {
+      width: 100%;
+      margin-top: 15px;
+      padding: 10px;
+      border: 1px solid #ddd;
+      outline: none;
+      margin-bottom: 10px; }
+    .contact form span {
+      color: red; }
+    .contact form .message textarea {
+      margin-top: 10px;
+      width: 100%;
+      padding: 20px;
+      border: 1px solid #ddd;
+      outline: none; }
+    .contact form .submit {
+      background-color: #efecec;
+      font-size: 13px;
+      text-align: center;
+      white-space: nowrap;
+      font-weight: 500;
+      border: none;
+      border-radius: 10%;
+      letter-spacing: 0.5px;
+      color: black;
+      padding: 12px 20px 10px 20px;
+      text-transform: uppercase;
+      margin-top: 20px;
+      cursor: pointer; }
+      .contact form .submit:hover {
+        background-color: #ff2f56;
+        color: white; }
+
+.features-section {
+  background-color: white;
+  padding: 30px; }
+  .features-section .features .feature-element .feature-first-p {
+    font-size: 26px;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+    color: #333;
+    margin: 0px; }
+  .features-section .features .feature-element .feature-second-p {
+    color: #999;
+    padding: 0px;
+    margin: 0px;
+    padding-top: 3px; }
+
+.newsletter-section {
+  background: url(https://klbtheme.com/harrier/wp-content/uploads/2019/05/newsletter-bg.jpg);
+  height: 300px; }
+  .newsletter-section h5 {
+    color: #fbe122;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin: auto;
+    padding-top: 30px;
+    font-weight: 500;
+    text-align: center;
+    font-size: 26px; }
+  .newsletter-section h4 {
+    margin-bottom: 23px;
+    display: block;
+    padding: 0px;
+    font-family: "Saira Condensed", sans-serif;
+    font-size: 30px;
+    letter-spacing: 1px;
+    font-weight: 600;
+    text-transform: uppercase;
+    color: #fff;
+    text-align: center; }
+  .newsletter-section .form-elements {
+    text-align: center; }
+    .newsletter-section .form-elements form input {
+      border: none;
+      background: #fff;
+      width: 30%;
+      display: inline;
+      color: #a7a7a7;
+      line-height: 20px;
+      background-color: #fff;
+      outline: none;
+      font-size: 14px;
+      font-family: open sans, sans-serif;
+      padding: 20px; }
+    .newsletter-section .form-elements form .subs-btn {
+      background-color: yellow;
+      color: black;
+      padding: 19px 28px 20px 28px;
+      cursor: pointer;
+      font-weight: 500;
+      font-size: 15px;
+      text-transform: uppercase;
+      border: none; }
+      .newsletter-section .form-elements form .subs-btn:hover {
+        background-color: #333;
+        color: white; }
+        .newsletter-section .form-elements form .subs-btn:hover .envelope {
+          color: white; }
+
+*,
 *::before,
 *::after {
   box-sizing: border-box;
@@ -7669,7 +7817,8 @@ body {
     background-color: white;
     padding: 20px; }
     .slider-section .filter-part form .select2-container {
-      margin-top: 4% !important; }
+      margin-top: 4% !important;
+      width: 100% !important; }
     .slider-section .filter-part form button {
       margin-top: 15px;
       padding-top: 10px;
@@ -8111,7 +8260,10 @@ body {
           letter-spacing: 1px;
           width: 200px;
           padding: 10px 15px;
-          top: 60%; }
+          top: 60%;
+          left: 0; }
+        .blog-section .blog-footer .footer-element .blog-img img {
+          width: 100%; }
       .blog-section .blog-footer .footer-element .info a {
         margin-left: 10px;
         color: red; }

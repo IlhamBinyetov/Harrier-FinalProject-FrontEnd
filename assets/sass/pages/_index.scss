@@ -23,6 +23,7 @@ body {
     form {
       & .select2-container {
         margin-top: 4% !important;
+        width: 100% !important;
       }
       button {
         margin-top: 15px;
@@ -596,6 +597,10 @@ body {
           width: 200px;
           padding: 10px 15px;
           top: 60%;
+          left: 0;
+        }
+        img {
+          width: 100%;
         }
       }
       .info {

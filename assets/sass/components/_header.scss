@@ -1,6 +1,6 @@
 *,
-*::before,
-*::after {
+*:before,
+*:after {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
@@ -8,26 +8,15 @@
 
 .header {
   position: relative;
-  height: 109px;
-  background-color: white;
+  margin: 0;
+  height: 112px;
+
   .navbar {
-    box-sizing: border-box;
+    width: 100%;
+    margin-bottom: 0;
     .logo {
-      position: relative;
       padding: 40px;
-      z-index: 100;
-      &::after {
-        position: absolute;
-        padding: 10px;
-        background-color: yellow;
-        width: 111%;
-        content: "";
-        transform: skew(-25deg);
-        height: 100%;
-        top: 0%;
-        left: -12%;
-        z-index: -1;
-      }
+      background-color: yellow;
     }
     .header-nav {
       width: 100%;
@@ -53,19 +42,22 @@
       .header-main {
         display: flex;
         justify-content: space-around;
-
+        background-color: white;
         .header-menu {
           ul {
-            li {
-              position: relative;
+            display: flex;
+            justify-content: space-around;
+            padding: 23px;
 
+            li {
               a {
                 color: black;
                 &:hover {
+                  position: relative;
                   &:after {
                     content: "";
                     position: absolute;
-                    top: 150%;
+                    top: 163%;
                     right: 2%;
                     background-color: yellow;
                     width: 100%;
@@ -110,6 +102,7 @@
       .basket-section {
         .basket {
           position: relative;
+          color: black;
           & span {
             background: #ed6663;
             display: inline-block;
@@ -128,7 +121,7 @@
           display: none;
           width: 350px;
           position: absolute;
-          top: 80%;
+          top: 85%;
           right: 5%;
           z-index: 1000;
           background-color: white;
@@ -203,14 +196,17 @@
 
       .hamburger-section {
         margin-left: 5px;
+        a {
+          color: black;
+        }
 
         .user-menu {
           padding-top: 15px;
           display: none;
           width: 200px;
           position: absolute;
-          top: 80%;
-          right: 7%;
+          top: 85%;
+          right: 3%;
           z-index: 1000;
           line-height: 15px;
           background-color: white;
