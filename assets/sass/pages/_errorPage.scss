@@ -5,12 +5,11 @@
   margin: 0;
   padding: 0;
 }
-body {
-  background-color: #e2e2e2;
-}
+
 .bg {
   position: relative;
-  margin-bottom: 7%;
+  margin: 0;
+  padding: 0;
   img {
     width: 100%;
     height: 200px;
@@ -29,74 +28,42 @@ body {
   }
 }
 
-.map {
-  width: 98%;
-  margin: auto;
-  iframe {
-    width: 100%;
-    padding: 20px;
-  }
-}
-
-.contact {
-  width: 95%;
-  margin: auto;
-  background-color: white;
-  .contact-header {
-    padding-top: 2%;
-    h2 {
-      width: 95%;
-      color: #292929;
-      text-transform: uppercase;
-      border-bottom: 1px #eaeaea solid;
-      border-left: 2px #ed6663 solid;
-      font-size: 20px;
-      letter-spacing: 0.05em;
-      font-weight: 500;
-      padding: 20px 15px 15px 15px;
-      margin-left: 30px;
-    }
-  }
-  form {
-    padding: 30px;
-    input {
+.error-section {
+  position: relative;
+  .error-img {
+    width: 80%;
+    margin: auto;
+    img {
+      height: 100%;
       width: 100%;
+    }
+  }
+  .error-message {
+    position: absolute;
+    top: 10%;
+    right: 13%;
+    button {
       margin-top: 15px;
-      padding: 10px;
-      border: 1px solid #ddd;
-      outline: none;
-      margin-bottom: 10px;
-    }
-    span {
-      color: red;
-    }
-    .message {
-      textarea {
-        margin-top: 10px;
-        width: 100%;
-        padding: 20px;
-        border: 1px solid #ddd;
-        outline: none;
-      }
-    }
-
-    .submit {
-      background-color: #efecec;
-      font-size: 13px;
+      margin-left: 25%;
       text-align: center;
-      white-space: nowrap;
+      font-size: 16px;
       font-weight: 500;
-      border: none;
-      border-radius: 10%;
+      line-height: normal;
+      text-decoration: none;
       letter-spacing: 0.5px;
-      color: black;
-      padding: 12px 20px 10px 20px;
-      text-transform: uppercase;
-      margin-top: 20px;
+      padding: 10px;
       cursor: pointer;
+      background-color: #ed6663;
+      border: none;
+      border-radius: 5px;
+      a {
+        color: black;
+      }
       &:hover {
-        background-color: #ff2f56;
-        color: white;
+        background-color: black;
+        a {
+          color: white;
+        }
       }
     }
   }
