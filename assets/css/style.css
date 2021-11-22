@@ -7416,76 +7416,148 @@ body {
 .header {
   position: relative;
   margin: 0;
-  height: 112px; }
+  height: 112px;
+  width: 100%; }
+  @media screen and (max-width: 768px) {
+    .header {
+      margin-bottom: 7%; } }
   .header .navbar {
     width: 100%;
-    margin-bottom: 0; }
+    margin-bottom: 0;
+    display: flex;
+    flex-wrap: wrap; }
     .header .navbar .logo {
-      padding: 40px;
+      padding: 30px;
       background-color: yellow; }
+      .header .navbar .logo a img {
+        width: 70%; }
+      @media screen and (max-width: 768px) {
+        .header .navbar .logo a img {
+          width: 60%;
+          margin-left: 20%; } }
     .header .navbar .header-nav {
-      width: 100%; }
+      padding: 0; }
       .header .navbar .header-nav .banners {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
         background-color: black;
         color: white;
         height: 40%;
         padding: 10px; }
+        @media screen and (max-width: 768px) {
+          .header .navbar .header-nav .banners {
+            padding: 30px;
+            height: 60%; } }
         .header .navbar .header-nav .banners .banners-firstPart {
-          margin-left: 30px; }
+          display: flex; }
+          @media screen and (max-width: 960px) {
+            .header .navbar .header-nav .banners .banners-firstPart {
+              font-size: 12px; } }
+          @media screen and (max-width: 768px) {
+            .header .navbar .header-nav .banners .banners-firstPart {
+              width: 100%;
+              margin-bottom: 15px;
+              border-bottom: 1px solid #e5e5e5; }
+              .header .navbar .header-nav .banners .banners-firstPart p {
+                margin-left: 35%;
+                margin-bottom: 10px; } }
         .header .navbar .header-nav .banners .banners-secondPart {
-          margin-right: 30px;
           text-align: center;
           padding: 9 px 5 px;
           letter-spacing: 0.5px; }
-          .header .navbar .header-nav .banners .banners-secondPart > p {
-            margin-left: 10px;
-            margin-right: 5px; }
+          .header .navbar .header-nav .banners .banners-secondPart i {
+            margin-right: 3%; }
+          .header .navbar .header-nav .banners .banners-secondPart .phone {
+            margin-left: 2%; }
+          @media screen and (max-width: 960px) {
+            .header .navbar .header-nav .banners .banners-secondPart i,
+            .header .navbar .header-nav .banners .banners-secondPart span {
+              font-size: 11px; } }
+          @media screen and (max-width: 768px) {
+            .header .navbar .header-nav .banners .banners-secondPart {
+              padding-left: 25%;
+              padding-bottom: 3%; } }
       .header .navbar .header-nav .header-main {
         display: flex;
         justify-content: space-around;
         background-color: white; }
+        @media screen and (min-width: 768px) {
+          .header .navbar .header-nav .header-main .custom-hamburger {
+            display: none; } }
+        @media screen and (max-width: 768px) {
+          .header .navbar .header-nav .header-main .header-menu {
+            display: none; } }
         .header .navbar .header-nav .header-main .header-menu ul {
           display: flex;
-          justify-content: space-around;
+          justify-content: space-evenly;
           padding: 23px; }
+          .header .navbar .header-nav .header-main .header-menu ul li:hover {
+            border-bottom: 5px solid yellow; }
           .header .navbar .header-nav .header-main .header-menu ul li a {
             color: black; }
-            .header .navbar .header-nav .header-main .header-menu ul li a:hover {
-              position: relative; }
-              .header .navbar .header-nav .header-main .header-menu ul li a:hover:after {
-                content: "";
-                position: absolute;
-                top: 163%;
-                right: 2%;
-                background-color: yellow;
-                width: 100%;
-                height: 10px;
-                border-radius: 10px; }
+        @media screen and (max-width: 1100px) {
+          .header .navbar .header-nav .header-main li {
+            font-size: 10px; }
+          .header .navbar .header-nav .header-main .header-right div {
+            font-size: 15px; } }
     .header .navbar .header-right {
       display: flex;
-      justify-content: space-evenly;
       font-size: 20px;
-      overflow: hidden;
-      align-items: center; }
-      .header .navbar .header-right .search-section form .search-box {
-        display: none;
-        font-size: 16px;
-        width: 200px;
-        height: 25px;
-        text-align: center;
-        margin-right: 5px;
-        border: none;
-        outline: none;
-        border-left: 1 px #a19a9a solid;
-        opacity: 1;
-        z-index: 100; }
-      .header .navbar .header-right .search-section form .search-button {
-        border: none;
-        font-size: 16px;
-        background-color: white; }
+      align-items: center;
+      position: relative;
+      justify-content: space-between; }
+      @media screen and (max-width: 768px) {
+        .header .navbar .header-right {
+          align-items: initial;
+          justify-content: space-evenly;
+          margin-top: 1%; }
+          .header .navbar .header-right .search-button {
+            display: none; }
+          .header .navbar .header-right .basket-section {
+            margin-right: 5px; }
+            .header .navbar .header-right .basket-section a {
+              position: relative; }
+              .header .navbar .header-right .basket-section a i {
+                font-size: 20px; }
+              .header .navbar .header-right .basket-section a span {
+                font-size: 10px;
+                display: inline-block;
+                position: absolute;
+                top: -5%; } }
+      @media screen and (max-width: 520px) {
+        .header .navbar .header-right {
+          justify-content: unsafe; } }
+      .header .navbar .header-right .search-section {
+        visibility: hidden; }
+        @media screen and (max-width: 768px) {
+          .header .navbar .header-right .search-section {
+            display: none; } }
+        .header .navbar .header-right .search-section form input {
+          width: 100%; }
+        .header .navbar .header-right .search-section form .search-box {
+          height: 25px;
+          text-align: center;
+          margin-right: 5px;
+          border: none;
+          outline: none;
+          border-left: 1 px #a19a9a solid;
+          opacity: 1;
+          z-index: 100; }
+        .header .navbar .header-right .search-section form .search-button {
+          border: none;
+          font-size: 16px;
+          background-color: white; }
+        .header .navbar .header-right .search-section button {
+          border: none;
+          background: transparent;
+          font-size: 18px; }
       .header .navbar .header-right .basket-section .basket {
         position: relative;
         color: black; }
+        @media screen and (max-width: 768px) {
+          .header .navbar .header-right .basket-section .basket i {
+            font-size: 14px; } }
         .header .navbar .header-right .basket-section .basket span {
           background: #ed6663;
           display: inline-block;
@@ -7497,7 +7569,15 @@ body {
           line-height: 20px;
           text-align: center;
           position: absolute;
-          top: -10px; }
+          top: -17px;
+          left: 8px; }
+          @media screen and (max-width: 768px) {
+            .header .navbar .header-right .basket-section .basket span {
+              font-size: 10px;
+              width: 15px;
+              height: 10px;
+              top: -13px;
+              padding-bottom: 17px; } }
       .header .navbar .header-right .basket-section .cart-menu {
         display: none;
         width: 350px;
@@ -7558,31 +7638,105 @@ body {
               .header .navbar .header-right .basket-section .cart-menu .product-menu .cart-buttons a:hover {
                 background-color: #121212;
                 color: #fff; }
-      .header .navbar .header-right .hamburger-section {
-        margin-left: 5px; }
-        .header .navbar .header-right .hamburger-section a {
-          color: black; }
-        .header .navbar .header-right .hamburger-section .user-menu {
-          padding-top: 15px;
-          display: none;
-          width: 200px;
-          position: absolute;
-          top: 85%;
-          right: 3%;
-          z-index: 1000;
-          line-height: 15px;
-          background-color: white;
-          text-align: center; }
-          .header .navbar .header-right .hamburger-section .user-menu ul {
-            text-transform: uppercase; }
-            .header .navbar .header-right .hamburger-section .user-menu ul li {
-              font-size: 16px;
-              padding-top: 6 px;
-              padding-bottom: 6 px;
-              border-bottom: 1 px solid black;
-              letter-spacing: 0.5px;
-              padding-left: 0;
-              line-height: 30px; }
+      .header .navbar .header-right .hamburger-section a {
+        color: black; }
+      .header .navbar .header-right .hamburger-section .user-menu {
+        padding-top: 15px;
+        display: none;
+        width: 200px;
+        position: absolute;
+        top: 85%;
+        right: 3%;
+        z-index: 1000;
+        line-height: 15px;
+        background-color: white;
+        text-align: center; }
+        .header .navbar .header-right .hamburger-section .user-menu ul {
+          text-transform: uppercase; }
+          .header .navbar .header-right .hamburger-section .user-menu ul li {
+            font-size: 16px;
+            padding-top: 6 px;
+            padding-bottom: 6 px;
+            border-bottom: 1 px solid black;
+            letter-spacing: 0.5px;
+            padding-left: 0;
+            line-height: 30px; }
+      @media screen and (max-width: 410px) {
+        .header .navbar .header-right .hamburger-section {
+          margin-right: 15px; } }
+
+#menuToggle {
+  display: block;
+  position: relative;
+  z-index: 1;
+  user-select: none; }
+  #menuToggle a {
+    text-decoration: none;
+    color: #232323;
+    transition: color 0.3s ease; }
+    #menuToggle a:hover {
+      color: tomato; }
+  #menuToggle input {
+    display: block;
+    width: 40px;
+    height: 32px;
+    position: absolute;
+    top: -7px;
+    left: -5px;
+    cursor: pointer;
+    opacity: 0;
+    /* hide this */
+    z-index: 2;
+    /* and place it over the hamburger */
+    -webkit-touch-callout: none; }
+    #menuToggle input:checked ~ span {
+      opacity: 1;
+      transform: rotate(45deg) translate(-2px, -1px);
+      background: #232323; }
+    #menuToggle input:checked ~ span:nth-last-child(3) {
+      opacity: 0;
+      transform: rotate(0deg) scale(0.2, 0.2); }
+    #menuToggle input:checked ~ span:nth-last-child(2) {
+      transform: rotate(-45deg) translate(0, -1px); }
+  #menuToggle span {
+    display: block;
+    width: 33px;
+    height: 4px;
+    margin-bottom: 5px;
+    position: relative;
+    background: #cdcdcd;
+    border-radius: 3px;
+    z-index: 1;
+    transform-origin: 4px 0px;
+    transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1), background 0.5s cubic-bezier(0.77, 0.2, 0.05, 1), opacity 0.55s ease; }
+    #menuToggle span:first-child {
+      transform-origin: 0% 0%; }
+    #menuToggle span:nth-last-child(2) {
+      transform-origin: 0% 100%; }
+
+#menu {
+  position: absolute;
+  width: 200px;
+  margin: -37px 0 0 -50px;
+  padding: 50px;
+  padding-top: 100px;
+  background: #ededed;
+  list-style-type: none;
+  -webkit-font-smoothing: antialiased;
+  /* to stop flickering of text in safari */
+  transform-origin: 0% 0%;
+  transform: translate(-100%, 0);
+  transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1); }
+
+#menu li {
+  padding: 10px 0;
+  font-size: 16px; }
+
+/*
+ * And let's slide it in from the left
+ */
+#menuToggle input:checked ~ ul {
+  transform: none; }
 
 .footer-section {
   background-color: #23292e;
@@ -8543,3 +8697,15 @@ body {
         color: white; }
         .newsletter-section .form-elements form .subs-btn:hover .envelope {
           color: white; }
+
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0; }
+
+.car-mini-detail {
+  width: 95%;
+  margin-top: 100px;
+  padding-top: 50px; }

@@ -1,9 +1,13 @@
+"use strict"
+
 $(document).ready(function () {
 
 
     $('.search-button').click(function (e) {
         e.preventDefault();
-        $('.search-box').show();
+        $('.search-section').show();
+        $('.search-section').css('visibility', 'visible');
+        $(this).hide();
 
 
     });
@@ -124,6 +128,17 @@ $(document).ready(function () {
 
 
 
+    //custom-hamburger-menu
+
+    $(".custom-hamburger-list").click(function () {
+        $(".menu-list").toggle();
+
+
+    });
+
+
+
+
 
 
 
@@ -156,3 +171,8 @@ function showSlides(n) {
     slides[slideIndex - 1].style.display = "block";
     dots[slideIndex - 1].className += " active";
 }
+
+
+
+//----------------------------------------//
+
