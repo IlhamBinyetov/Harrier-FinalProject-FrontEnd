@@ -1,0 +1,138 @@
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.bg-img-section {
+  img {
+    width: 100%;
+  }
+}
+
+.list-section {
+  width: 95%;
+  margin: auto;
+  padding-top: 5%;
+
+  .popular-vehicles {
+    background-color: white;
+    height: max-content;
+    padding-bottom: 2%;
+
+    .car-item {
+      border-bottom: 1px solid #e5e5e5;
+      .car-image {
+        img {
+          width: 100%;
+          border: 1px solid #e5e5e5;
+          margin-left: 10px;
+          height: 100%;
+          object-fit: cover;
+        }
+      }
+
+      .car-details {
+        p {
+          a {
+            color: black;
+          }
+        }
+        .car-brand {
+          margin-left: 10px;
+        }
+        .car-price {
+          color: red;
+          margin-top: 10px;
+        }
+      }
+    }
+
+    .part-name {
+      background-color: #23292e;
+      h3 {
+        color: #fff;
+        font-size: 20px;
+        font-weight: 500;
+        margin: 0;
+        padding: 15px;
+      }
+    }
+  }
+
+  .carlists {
+    padding: 10px;
+    background-color: white;
+    img {
+      width: 100%;
+    }
+    .brand-name {
+      p {
+        font-size: 16px;
+        color: #121212;
+        font-weight: 500;
+        text-align: left;
+        font-family: "Saira Condensed", sans-serif;
+        letter-spacing: 0.5px;
+      }
+      .description {
+        font-size: 11px;
+        font-family: "Open Sans", sans-serif;
+        color: #666;
+        line-height: 1.5em;
+        margin-top: 3%;
+        text-align: left;
+        width: 100%;
+      }
+      a {
+        span {
+          margin-left: 10px;
+          margin-right: 10px;
+          color: #999;
+        }
+        i {
+          color: #fbe122;
+        }
+      }
+      .brand-price {
+        font-size: 18px;
+        color: #000;
+        font-weight: 600;
+        margin-top: 4%;
+      }
+
+      .view-more {
+        font-size: 16px;
+        display: inline-block;
+        padding: 10px;
+        background-color: #fbe122;
+        color: #121212;
+        i {
+          color: black;
+          margin-right: 10px;
+        }
+        &:hover {
+          background-color: #121212;
+          color: white;
+          i {
+            color: white;
+          }
+        }
+      }
+    }
+
+    .car-item {
+      border-bottom: 1px solid #e5e5e5;
+      padding-bottom: 3%;
+      padding-top: 2%;
+    }
+
+    .pagination {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+  }
+}

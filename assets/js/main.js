@@ -49,9 +49,21 @@ $(document).ready(function () {
 
     $("#sel1").change(function () {
         var id = $(this).val(),
+
             options = [];
-        select.empty();
-        $("#sel2").select2('enable');
+        if (id != 0) {
+
+            $("#sel2").select2('enable');
+
+        }
+        else {
+            select.empty();
+            $('#sel2').select2({
+                disabled: true
+            });
+        }
+
+
         cache.find('option').each(function () {
             if (id === '0') {
                 select.append($(this).clone());
@@ -61,6 +73,11 @@ $(document).ready(function () {
             }
         });
     });
+
+
+    if ("#sel1") {
+
+    }
 
     $('.car-pics').slick({
         dots: false,
