@@ -82,6 +82,13 @@ $(document).ready(function () {
         touchMove: false
     });
 
+    $('.car-pics-slide').slick({
+        dots: false,
+        slidesToShow: 3,
+        slidesToScroll: 1,
+        touchMove: false
+    });
+
 
 
     // $('#countdown').countdown({
