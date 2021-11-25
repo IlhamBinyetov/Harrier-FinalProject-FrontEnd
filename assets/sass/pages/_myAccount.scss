@@ -1,0 +1,196 @@
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+main {
+  padding-top: 4%;
+  .login-section {
+    width: 95%;
+    margin: auto;
+    padding: 3%;
+    background-color: white;
+    .login {
+      h2 {
+        font-size: 18px;
+        text-transform: uppercase;
+        margin-bottom: 8px;
+        display: inline-block;
+        padding-bottom: 6px;
+        width: 100%;
+        font-family: "Rubik", sans-serif;
+        font-weight: 500;
+        letter-spacing: 0.5px;
+      }
+      input {
+        width: 100%;
+        margin-bottom: 3%;
+        padding: 10px;
+        outline: none;
+      }
+      button {
+        background: #fbe122;
+        padding: 10px 20px 8px 20px;
+        font-size: 16px;
+        text-transform: uppercase;
+        font-weight: 400;
+        color: #121212;
+        letter-spacing: 1px !important;
+        border: none;
+        border-bottom: 2px #ecd213 solid;
+        font-family: "Saira Condensed", sans-serif;
+        margin-bottom: 5%;
+        display: block;
+        &:hover {
+          background-color: #121212;
+          color: white;
+        }
+      }
+      .star {
+        color: red;
+      }
+      .remember {
+        display: inline-block;
+        max-width: 100%;
+        margin-bottom: 5px;
+        font-weight: 700;
+        input {
+          width: inherit;
+        }
+      }
+      a {
+        display: block;
+      }
+    }
+    .register {
+      h2 {
+        font-size: 18px;
+        text-transform: uppercase;
+        margin-bottom: 8px;
+        display: inline-block;
+        padding-bottom: 6px;
+        width: 100%;
+        font-family: "Rubik", sans-serif;
+        font-weight: 500;
+        letter-spacing: 0.5px;
+      }
+      input {
+        width: 100%;
+        margin-bottom: 3%;
+        padding: 10px;
+        outline: none;
+      }
+      button {
+        background: #fbe122;
+        padding: 10px 20px 8px 20px;
+        font-size: 16px;
+        text-transform: uppercase;
+        font-weight: 400;
+        color: #121212;
+        letter-spacing: 1px !important;
+        border: none;
+        border-bottom: 2px #ecd213 solid;
+        font-family: "Saira Condensed", sans-serif;
+        margin-bottom: 5%;
+        display: block;
+        &:hover {
+          background-color: #121212;
+          color: white;
+        }
+      }
+      .star {
+        color: red;
+      }
+    }
+
+    .main-part {
+      display: flex;
+      justify-content: space-between;
+    }
+  }
+  .features-section {
+    background-color: white;
+    padding: 30px;
+    .features {
+      .feature-element {
+        .feature-first-p {
+          font-size: 26px;
+          font-weight: 600;
+          letter-spacing: 0.5px;
+          color: #333;
+          margin: 0px;
+        }
+        .feature-second-p {
+          color: #999;
+          padding: 0px;
+          margin: 0px;
+          padding-top: 3px;
+        }
+      }
+    }
+  }
+  .newsletter-section {
+    background: url(https://klbtheme.com/harrier/wp-content/uploads/2019/05/newsletter-bg.jpg);
+    height: 300px;
+    h5 {
+      color: #fbe122;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      margin: auto;
+      padding-top: 30px;
+      font-weight: 500;
+      text-align: center;
+      font-size: 26px;
+    }
+    h4 {
+      margin-bottom: 23px;
+      display: block;
+      padding: 0px;
+      font-family: "Saira Condensed", sans-serif;
+      font-size: 30px;
+      letter-spacing: 1px;
+      font-weight: 600;
+      text-transform: uppercase;
+      color: #fff;
+      text-align: center;
+    }
+    .form-elements {
+      text-align: center;
+      form {
+        input {
+          border: none;
+          background: #fff;
+          width: 30%;
+          display: inline;
+          color: #a7a7a7;
+          line-height: 20px;
+          background-color: #fff;
+          outline: none;
+          font-size: 14px;
+          font-family: open sans, sans-serif;
+          padding: 20px;
+        }
+        .subs-btn {
+          background-color: yellow;
+          color: black;
+          padding: 19px 28px 20px 28px;
+          cursor: pointer;
+          font-weight: 500;
+          font-size: 15px;
+          text-transform: uppercase;
+          border: none;
+          &:hover {
+            background-color: #333;
+            color: white;
+            .envelope {
+              color: white;
+            }
+          }
+        }
+      }
+    }
+  }
+}
