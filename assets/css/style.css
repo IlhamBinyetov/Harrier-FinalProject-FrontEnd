@@ -9412,22 +9412,59 @@ main {
   main .advanced-search {
     background-color: white;
     padding: 3%;
-    width: 95%;
+    width: 97%;
     margin: auto; }
     main .advanced-search h3 {
       text-align: center; }
+    main .advanced-search h4 {
+      text-align: center;
+      margin-top: 3%; }
     main .advanced-search form .search-product {
       display: flex;
-      justify-content: space-around; }
+      justify-content: space-around;
+      margin-top: 3%; }
       main .advanced-search form .search-product select {
         outline: none;
         width: 100%; }
       main .advanced-search form .search-product .left-side {
         display: flex;
         justify-content: space-between; }
+        main .advanced-search form .search-product .left-side .range {
+          display: flex; }
+          main .advanced-search form .search-product .left-side .range label {
+            margin-left: 2%; }
+          main .advanced-search form .search-product .left-side .range input {
+            width: 30%;
+            outline: none; }
       main .advanced-search form .search-product .right-side {
         display: flex;
         justify-content: space-between; }
+        main .advanced-search form .search-product .right-side .range {
+          display: flex; }
+          main .advanced-search form .search-product .right-side .range label {
+            margin-left: 2%; }
+          main .advanced-search form .search-product .right-side .range input {
+            width: 30%;
+            outline: none; }
+    main .advanced-search form .car-tags {
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      margin-top: 3%s; }
+    main .advanced-search form .search-result {
+      display: flex;
+      justify-content: space-between; }
+      main .advanced-search form .search-result select {
+        width: 100%; }
+    main .advanced-search form .search-btn {
+      background-color: red;
+      color: white;
+      padding: 10px;
+      border-radius: 5px;
+      border: none;
+      outline: none;
+      margin-top: 4%;
+      text-align: center; }
   main .features-section {
     background-color: white;
     padding: 30px; }

@@ -12,15 +12,20 @@ main {
   .advanced-search {
     background-color: white;
     padding: 3%;
-    width: 95%;
+    width: 97%;
     margin: auto;
     h3 {
       text-align: center;
+    }
+    h4 {
+      text-align: center;
+      margin-top: 3%;
     }
     form {
       .search-product {
         display: flex;
         justify-content: space-around;
+        margin-top: 3%;
         select {
           outline: none;
           width: 100%;
@@ -28,11 +33,54 @@ main {
         .left-side {
           display: flex;
           justify-content: space-between;
+          .range {
+            display: flex;
+            label {
+              margin-left: 2%;
+            }
+            input {
+              width: 30%;
+              outline: none;
+            }
+          }
         }
         .right-side {
           display: flex;
           justify-content: space-between;
+          .range {
+            display: flex;
+            label {
+              margin-left: 2%;
+            }
+            input {
+              width: 30%;
+              outline: none;
+            }
+          }
         }
+      }
+      .car-tags {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        margin-top: 3%s;
+      }
+      .search-result {
+        display: flex;
+        justify-content: space-between;
+        select {
+          width: 100%;
+        }
+      }
+      .search-btn {
+        background-color: red;
+        color: white;
+        padding: 10px;
+        border-radius: 5px;
+        border: none;
+        outline: none;
+        margin-top: 4%;
+        text-align: center;
       }
     }
   }
