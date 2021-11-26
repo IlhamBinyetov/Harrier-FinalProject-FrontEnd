@@ -19,7 +19,8 @@ main {
     }
     h4 {
       text-align: center;
-      margin-top: 3%;
+      margin-top: 5%;
+      margin-bottom: 3%;
     }
     form {
       .search-product {
@@ -81,6 +82,9 @@ main {
         outline: none;
         margin-top: 4%;
         text-align: center;
+        &:hover {
+          background-color: black;
+        }
       }
     }
   }

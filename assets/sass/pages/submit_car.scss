@@ -1,0 +1,258 @@
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+main {
+  .car-upload {
+    width: 97%;
+    margin: auto;
+    background-color: white;
+    padding: 3%;
+    .div-header {
+      display: flex;
+      justify-content: space-between;
+      border-bottom: 1px solid #eee;
+      padding-bottom: 20px;
+      a {
+        display: inline-block;
+        background-color: #fbe122;
+        font-size: 16px;
+        text-transform: uppercase;
+        font-weight: 400;
+        color: #121212;
+        letter-spacing: 1px !important;
+        border: none;
+        cursor: pointer;
+        font-family: "Saira Condensed", sans-serif;
+        padding: 1%;
+        margin-bottom: 2%;
+        &:hover {
+          background-color: #121212;
+          color: #fff;
+        }
+      }
+      p {
+        font-family: "Open Sans", sans-serif;
+        font-size: 15px;
+      }
+    }
+    form {
+      .account-part {
+        input {
+          outline: none;
+          padding: 10px;
+          line-height: 21px;
+          border: 1px solid #ddd;
+        }
+        textarea {
+          padding: 20px;
+          border: 1px solid #eee;
+          outline: none;
+        }
+        .username {
+          padding-top: 2%;
+          border-bottom: 1px solid #eee;
+          padding-bottom: 2%;
+          div {
+            display: flex;
+            justify-content: space-between;
+          }
+        }
+      }
+      .car-data {
+        .car-options {
+          padding-top: 2%;
+
+          div {
+            margin-top: 2%;
+            border-bottom: 1px solid #eee;
+            padding-bottom: 3%;
+            display: flex;
+            justify-content: space-between;
+            label {
+              small {
+                color: #999999;
+                font-weight: normal;
+                text-transform: lowercase;
+              }
+            }
+            select {
+              padding: 1%;
+              border: 1px solid #eee;
+            }
+            input {
+              padding: 1%;
+              outline: none;
+              border: 1px solid #eee;
+            }
+          }
+        }
+      }
+      .car-features {
+        border-bottom: 1px solid #eee;
+        .car-tags {
+          padding: 3%;
+          display: flex;
+          justify-content: space-between;
+          flex-wrap: wrap;
+          .tag-item {
+            display: flex;
+
+            input {
+              padding: 5px;
+              margin-right: 10px;
+            }
+            label {
+              font-weight: 700;
+            }
+          }
+        }
+      }
+      .image-part {
+        border-bottom: 1px solid #eee;
+        padding-bottom: 4%;
+        .image {
+          margin-top: 3%;
+          width: 100%;
+          height: auto;
+          border: 2px dashed #60646c;
+          cursor: pointer;
+
+          h3 {
+            text-align: center;
+            font-size: 24.5px;
+            line-height: 140%;
+            margin: 20px 0;
+          }
+          strong,
+          span {
+            display: block;
+            text-align: center;
+            margin: 10px;
+          }
+          .image-preview {
+            display: none;
+            justify-content: space-evenly;
+            flex-wrap: wrap;
+            padding: 3%;
+
+            .preview-item {
+              img {
+                width: 100%;
+                height: auto;
+              }
+              a {
+                margin-left: 35%;
+              }
+            }
+          }
+        }
+      }
+      .submit {
+        margin-top: 5%;
+        .car-preview {
+          font-size: 16px;
+          text-transform: uppercase;
+          font-weight: 400;
+          color: #121212;
+          letter-spacing: 1px !important;
+
+          cursor: pointer;
+          padding: 10px;
+          background-color: #fbe122;
+          margin-top: 15%;
+          &:hover {
+            background-color: #121212;
+            color: white;
+          }
+        }
+      }
+    }
+  }
+  .features-section {
+    background-color: white;
+    padding: 30px;
+    .features {
+      .feature-element {
+        .feature-first-p {
+          font-size: 26px;
+          font-weight: 600;
+          letter-spacing: 0.5px;
+          color: #333;
+          margin: 0px;
+        }
+        .feature-second-p {
+          color: #999;
+          padding: 0px;
+          margin: 0px;
+          padding-top: 3px;
+        }
+      }
+    }
+  }
+  .newsletter-section {
+    background: url(https://klbtheme.com/harrier/wp-content/uploads/2019/05/newsletter-bg.jpg);
+    height: 300px;
+    h5 {
+      color: #fbe122;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      margin: auto;
+      padding-top: 30px;
+      font-weight: 500;
+      text-align: center;
+      font-size: 26px;
+    }
+    h4 {
+      margin-bottom: 23px;
+      display: block;
+      padding: 0px;
+      font-family: "Saira Condensed", sans-serif;
+      font-size: 30px;
+      letter-spacing: 1px;
+      font-weight: 600;
+      text-transform: uppercase;
+      color: #fff;
+      text-align: center;
+    }
+    .form-elements {
+      text-align: center;
+      form {
+        input {
+          border: none;
+          background: #fff;
+          width: 30%;
+          display: inline;
+          color: #a7a7a7;
+          line-height: 20px;
+          background-color: #fff;
+          outline: none;
+          font-size: 14px;
+          font-family: open sans, sans-serif;
+          padding: 20px;
+        }
+        .subs-btn {
+          background-color: yellow;
+          color: black;
+          padding: 19px 28px 20px 28px;
+          cursor: pointer;
+          font-weight: 500;
+          font-size: 15px;
+          text-transform: uppercase;
+          border: none;
+          &:hover {
+            background-color: #333;
+            color: white;
+            .envelope {
+              color: white;
+            }
+          }
+        }
+      }
+    }
+  }
+}

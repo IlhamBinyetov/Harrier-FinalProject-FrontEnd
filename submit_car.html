@@ -33,7 +33,7 @@
       referrerpolicy="no-referrer"
     />
     <link rel="stylesheet" href="./assets/css/style.css" />
-    <title>Advanced_Search</title>
+    <title>Submit Car</title>
   </head>
   <body>
     <!-- HEADER AREA START -->
@@ -71,7 +71,7 @@
               <div class="header-menu col-md-6 col-lg-6">
                 <ul>
                   <li><a href="">HOME</a></li>
-                  <li><a href="">VEHICLES</a></li>
+                  <li><a href="./vehicles.html">VEHICLES</a></li>
                   <li><a href="">SHOP</a></li>
                   <li><a href="">BLOG</a></li>
                   <li><a href="./contact.html">CONTACT US</a></li>
@@ -173,7 +173,7 @@
 
                   <div class="drop-menu user-menu">
                     <ul>
-                      <li><a href="">Submit Car</a></li>
+                      <li><a href="./submit_car.html">Submit Car</a></li>
                       <li><a href="">My Cars</a></li>
                       <li><a href="">My Account</a></li>
                     </ul>
@@ -185,239 +185,258 @@
         </div>
       </div>
     </header>
-
     <main>
-      <section class="advanced-search">
-        <h3>Advanced Search</h3>
+      <section class="car-upload">
+        <div class="div-header">
+          <div class="col-4">
+            <h4>Have an account?</h4>
+          </div>
+          <div class="col-8">
+            <a href="./MyAccount.html">Sign In</a>
+            <p>
+              If you don’t have an account you can create one below by entering
+              your email address/username. Your account details will be
+              confirmed via email.
+            </p>
+          </div>
+        </div>
         <form action="">
-          <div class="search-product">
-            <div class="left-side col-5">
-              <label for="" class="col-4">Marka</label>
-              <select class="sel-example form-control col-8" id="sel1">
-                <option value="0">Butun Markalar</option>
-                <option value="1">Acura</option>
-                <option value="2">Audi</option>
-                <option value="3">BMW</option>
-                <option value="4">Chevrolet</option>
-                <option value="5">Hyundai</option>
-                <option value="6">Kia</option>
-                <option value="7">Mazda</option>
-                <option value="8">Mercedes-Benz</option>
-                <option value="9">Nissan</option>
-                <option value="10">Toyota</option>
-              </select>
-            </div>
-            <div class="right-side col-5">
-              <label for="" class="col-4">City</label>
-              <select name="" id="" class="col-8 sel-example form-control">
-                <option value="">Baku</option>
-                <option value="">Sumqayit</option>
-                <option value="">Quba</option>
-                <option value="">Lenkeran</option>
-                <option value="">Siyezen</option>
-                <option value="">Kurdemir</option>
-                <option value="">Seki</option>
-              </select>
-            </div>
-          </div>
-          <div class="search-product">
-            <div class="left-side col-5">
-              <label for="" class="col-4">Model</label>
-              <select name="" id="sel2" class="sel-example form-control col-8">
-                <option value="">Butun Modeller</option>
-                <option data-val="1">CL</option>
-                <option data-val="1">IlX</option>
-                <option data-val="1">Ilx Hybrid</option>
-                <option data-val="1">Integra</option>
-                <option data-val="2">A3</option>
-                <option data-val="2">A5</option>
-                <option data-val="2">A7</option>
-                <option data-val="2">A8</option>
-                <option data-val="3">X1</option>
-                <option data-val="3">X3</option>
-                <option data-val="3">X5</option>
-                <option data-val="3">X6</option>
-                <option data-val="3">X7</option>
-                <option data-val="3">Z8</option>
-                <option data-val="4">Cruze</option>
-                <option data-val="4">Aveo</option>
-                <option data-val="4">Volt</option>
-                <option data-val="5">Elantra</option>
-                <option data-val="5">Sonata</option>
-                <option data-val="5">Tucson</option>
-                <option data-val="6">Sorento</option>
-                <option data-val="6">Optima</option>
-                <option data-val="6">Cerato</option>
-                <option data-val="7">CX-3</option>
-                <option data-val="7">CX-5</option>
-                <option data-val="7">Mazda5</option>
-                <option data-val="8">GL</option>
-                <option data-val="8">Sprinter</option>
-                <option data-val="8">E220</option>
-                <option data-val="9">Sunny</option>
-                <option data-val="9">X-Trail</option>
-                <option data-val="9">Altima</option>
-                <option data-val="10">Corolla</option>
-                <option data-val="10">Prado</option>
-                <option data-val="10">Land Cruiser</option>
-              </select>
-            </div>
-            <div class="right-side col-5">
-              <label for="" class="col-4">Yanacaq Novu</label>
-              <select name="" id="" class="col-8 sel-example form-control">
-                <option value="">Dizel</option>
-                <option value="">Benzin</option>
-                <option value="">Qaz</option>
-                <option value="">Elektro</option>
-                <option value="">Hibrid</option>
-              </select>
-            </div>
-          </div>
-          <div class="search-product">
-            <div class="left-side col-5">
-              <label for="" class="col-4">Ban Novu</label>
-              <select name="" class="sel-example form-control col-8">
-                <option value="">Butun tipler</option>
-                <option value="">Furqon</option>
-                <option value="">Hetcbek/Liftbek</option>
-                <option value="">Sedan</option>
-                <option value="">Universal</option>
-                <option value="">Yuk masini</option>
-                <option value="">Pikap</option>
-              </select>
-            </div>
-            <div class="right-side col-5">
-              <label for="" class="col-4">Oturucu</label>
-              <select name="" id="" class="col-8 sel-example form-control">
-                <option value="">Butun tipler</option>
-                <option value="">Arxa</option>
-                <option value="">On</option>
-                <option value="">Tam</option>
-              </select>
-            </div>
-          </div>
-          <div class="search-product">
-            <div class="left-side col-5">
-              <label for="" class="col-4">Reng</label>
-              <select name="" class="sel-example form-control col-8">
-                <option value="">Butun</option>
-                <option value="">Qara</option>
-                <option value="">Ag</option>
-                <option value="">Yas Asfalt</option>
-                <option value="">Qirmizi</option>
-                <option value="">Bej</option>
-                <option value="">Gumusu</option>
-              </select>
-            </div>
-            <div class="right-side col-5">
-              <label for="" class="col-4">Suretler Qutusu</label>
-              <select name="" id="" class="col-8 sel-example form-control">
-                <option value="">Butun</option>
-                <option value="">Mexaniki</option>
-                <option value="">Avtomat</option>
-                <option value="">Robot</option>
-                <option value="">Variator</option>
-              </select>
-            </div>
-          </div>
-          <div class="search-product">
-            <div class="left-side col-5">
-              <label for="" class="col-4">Yurus</label>
-              <div class="range col-8">
-                <label for="" class="col-2">min.</label>
-                <input type="text" class="col-4" />
-                <label for="" class="col-2">maks.</label>
-                <input type="text" class="col-4" />
+          <div class="account-part">
+            <div class="username">
+              <div>
+                <label for="" class="col-4">Username</label>
+                <input type="text" class="col-8" />
               </div>
             </div>
-            <div class="right-side col-5">
-              <label for="" class="col-4">Buraxilis ili </label>
-              <div class="range col-8">
-                <label for="" class="col-2">min.</label>
-                <input type="text" class="col-4" />
-                <label for="" class="col-2">maks.</label>
-                <input type="text" class="col-4" />
+            <div class="username email">
+              <div>
+                <label for="" class="col-4">Your Email</label>
+                <input type="email" class="col-8" />
+              </div>
+            </div>
+            <div class="username">
+              <div>
+                <label for="" class="col-4">Listing Title</label>
+                <input type="text" class="col-8" />
+              </div>
+            </div>
+            <div class="username">
+              <div>
+                <label for="" class="col-4">Description</label>
+                <textarea name="" id="" class="col-8"></textarea>
               </div>
             </div>
           </div>
-          <div class="search-product">
-            <div class="left-side col-5">
-              <label for="" class="col-4">Qiymet</label>
-              <div class="range col-8">
-                <label for="" class="col-2">min.</label>
-                <input type="text" class="col-4" />
-                <label for="" class="col-2">maks.</label>
-                <input type="text" class="col-4" />
+          <div class="car-data">
+            <h2>Car Data</h2>
+            <div class="car-options">
+              <div>
+                <label for="" class="col-4">Condition</label>
+                <select name="" id="" class="col-8 sel-example form-control">
+                  <option value="">New</option>
+                  <option value="">Used</option>
+                </select>
+              </div>
+              <div>
+                <label for="" class="col-4">Make</label>
+                <select class="col-8 sel-example form-control" id="sel1">
+                  <option value="0">Select Make</option>
+                  <option value="1">Acura</option>
+                  <option value="2">Audi</option>
+                  <option value="3">BMW</option>
+                  <option value="4">Chevrolet</option>
+                  <option value="5">Hyundai</option>
+                  <option value="6">Kia</option>
+                  <option value="7">Mazda</option>
+                  <option value="8">Mercedes-Benz</option>
+                  <option value="9">Nissan</option>
+                  <option value="10">Toyota</option>
+                </select>
+              </div>
+              <div>
+                <label for="" class="col-4">Model</label>
+                <select class="col-8 sel-example form-control" id="sel2">
+                  <option value="">Select Model</option>
+                  <option data-val="1">CL</option>
+                  <option data-val="1">IlX</option>
+                  <option data-val="1">Ilx Hybrid</option>
+                  <option data-val="1">Integra</option>
+                  <option data-val="2">A3</option>
+                  <option data-val="2">A5</option>
+                  <option data-val="2">A7</option>
+                  <option data-val="2">A8</option>
+                  <option data-val="3">X1</option>
+                  <option data-val="3">X3</option>
+                  <option data-val="3">X5</option>
+                  <option data-val="3">X6</option>
+                  <option data-val="3">X7</option>
+                  <option data-val="3">Z8</option>
+                  <option data-val="4">Cruze</option>
+                  <option data-val="4">Aveo</option>
+                  <option data-val="4">Volt</option>
+                  <option data-val="5">Elantra</option>
+                  <option data-val="5">Sonata</option>
+                  <option data-val="5">Tucson</option>
+                  <option data-val="6">Sorento</option>
+                  <option data-val="6">Optima</option>
+                  <option data-val="6">Cerato</option>
+                  <option data-val="7">CX-3</option>
+                  <option data-val="7">CX-5</option>
+                  <option data-val="7">Mazda5</option>
+                  <option data-val="8">GL</option>
+                  <option data-val="8">Sprinter</option>
+                  <option data-val="8">E220</option>
+                  <option data-val="9">Sunny</option>
+                  <option data-val="9">X-Trail</option>
+                  <option data-val="9">Altima</option>
+                  <option data-val="10">Corolla</option>
+                  <option data-val="10">Prado</option>
+                  <option data-val="10">Land Cruiser</option>
+                </select>
+              </div>
+              <div>
+                <label for="" class="col-4">First Registration Date</label>
+                <input type="date" class="col-8" />
+              </div>
+              <div>
+                <label for="" class="col-4"
+                  >Price <small>(optional)</small></label
+                >
+                <input type="text" class="col-8" />
+              </div>
+              <div>
+                <label for="" class="col-4"
+                  >Mileage <small>(optional)</small></label
+                >
+                <input type="text" class="col-8" />
+              </div>
+              <div>
+                <label for="" class="col-4"
+                  >Fuel Type <small>(optional)</small></label
+                >
+                <input type="text" class="col-8" />
+              </div>
+              <div>
+                <label for="" class="col-4"
+                  >Color <small>(optional)</small></label
+                >
+                <input type="text" class="col-8" />
+              </div>
+              <div>
+                <label for="" class="col-4"
+                  >Body Style<small>(optional)</small></label
+                >
+                <input type="text" class="col-8" />
+              </div>
+              <div>
+                <label for="" class="col-4"
+                  >Power kW<small>(optional)</small></label
+                >
+                <input type="text" class="col-8" />
+              </div>
+              <div>
+                <label for="" class="col-4"
+                  >Power hp<small>(optional)</small></label
+                >
+                <input type="text" class="col-8" />
+              </div>
+              <div>
+                <label for="" class="col-4"
+                  >Doors<small>(optional)</small></label
+                >
+                <input type="text" class="col-8" />
+              </div>
+              <div>
+                <label for="" class="col-4"
+                  >Engine<small>(optional)</small></label
+                >
+                <input type="text" class="col-8" />
+              </div>
+              <div>
+                <label for="" class="col-4"
+                  >Transmission<small>(optional)</small></label
+                >
+                <select name="" id="" class="col-8 sel-example form-control">
+                  <option value="">Automatic</option>
+                  <option value="">Manual</option>
+                  <option value="">Semi-automatic</option>
+                </select>
               </div>
             </div>
-            <div class="right-side col-5">
-              <label for="" class="col-4">Muherrikin hecmi, sm3 </label>
-              <div class="range col-8">
-                <label for="" class="col-2">min.</label>
-                <input type="text" class="col-4" />
-                <label for="" class="col-2">maks.</label>
-                <input type="text" class="col-4" />
+          </div>
+          <div class="car-features">
+            <h2>Car Features</h2>
+            <div class="car-tags">
+              <div class="col-3 tag-item">
+                <input type="checkbox" />
+                <label for="">ABS</label>
+              </div>
+              <div class="col-3 tag-item">
+                <input type="checkbox" />
+                <label for="">Air Conditioner</label>
+              </div>
+              <div class="col-3 tag-item">
+                <input type="checkbox" />
+                <label for="">AntiLock Braking System</label>
+              </div>
+              <div class="col-3 tag-item">
+                <input type="checkbox" />
+                <label for="">Auxiliary heating</label>
+              </div>
+              <div class="col-3 tag-item">
+                <input type="checkbox" />
+                <label for=""> Bluetooth</label>
+              </div>
+              <div class="col-3 tag-item">
+                <input type="checkbox" />
+                <label for="">CD player</label>
+              </div>
+              <div class="col-3 tag-item">
+                <input type="checkbox" />
+                <label for=""> Central locking</label>
+              </div>
+              <div class="col-3 tag-item">
+                <input type="checkbox" />
+                <label for="">Head-up display</label>
+              </div>
+              <div class="col-3 tag-item">
+                <input type="checkbox" />
+                <label for="">Leather Seats</label>
+              </div>
+              <div class="col-3 tag-item">
+                <input type="checkbox" />
+                <label for="">Navigation system</label>
+              </div>
+              <div class="col-3 tag-item">
+                <input type="checkbox" />
+                <label for="">Panoramic roof</label>
+              </div>
+              <div class="col-3 tag-item">
+                <input type="checkbox" />
+                <label for=""> Parking sensors</label>
               </div>
             </div>
           </div>
-          <h4>Avtomobilin techizati</h4>
-          <div class="car-tags">
-            <div class="tag-item col-3">
-              <input type="checkbox" class="col-2" />
-              <label for="" class="col-6">Yungul lehimli diskler</label>
-            </div>
-            <div class="tag-item col-3">
-              <input type="checkbox" class="col-2" />
-              <label for="" class="col-6">ABS</label>
-            </div>
-            <div class="tag-item col-3">
-              <input type="checkbox" class="col-2" />
-              <label for="" class="col-6">Lyuk</label>
-            </div>
-            <div class="tag-item col-3">
-              <input type="checkbox" class="col-2" />
-              <label for="" class="col-6">Yagis sensoru</label>
-            </div>
-            <div class="tag-item col-3">
-              <input type="checkbox" class="col-2" />
-              <label for="" class="col-6">Merkezi Qapanma</label>
-            </div>
-            <div class="tag-item col-3">
-              <input type="checkbox" class="col-2" />
-              <label for="" class="col-6">Park radar</label>
-            </div>
-            <div class="tag-item col-3">
-              <input type="checkbox" class="col-2" />
-              <label for="" class="col-6">Kondisioner</label>
-            </div>
-            <div class="tag-item col-3">
-              <input type="checkbox" class="col-2" />
-              <label for="" class="col-6">Deri salon</label>
+          <div class="image-part">
+            <h2>Images</h2>
+            <div class="image">
+              <h3>Upload New Images</h3>
+              <strong>Click here to upload your images</strong>
+              <span
+                >You can upload multiple images at the same time, the first
+                image will be your thumbnail.</span
+              >
+              <div class="image-preview">
+                <div class="preview-item col-3">
+                  <img src="./assets/images/car30.jpg" alt="" />
+                  <a href="">Remove File</a>
+                </div>
+              </div>
             </div>
           </div>
-          <h4>Axtarisin neticeleri</h4>
-          <div class="search-result">
-            <div class="d-flex col-5">
-              <label for="" class="col-4">Cesidleme</label>
-              <select name="" id="" class="sel-example form-control col-6">
-                <option value="">Tarixe gore</option>
-                <option value="">Evvel Ucuz</option>
-                <option value="">Evvel bahali</option>
-                <option value="">Yurus</option>
-                <option value="">Buraxilis ili</option>
-              </select>
-            </div>
-            <div class="d-flex col-5">
-              <label for="" class="col-4">Avtomobilleri goster</label>
-              <select name="" id="" class="sel-example form-control col-6">
-                <option value="">Butun</option>
-                <option value="">Islenmis</option>
-                <option value="">Yeni</option>
-              </select>
-            </div>
+          <div class="submit">
+            <a href="" class="car-preview">Preview Car</a>
           </div>
-
-          <button type="submit" class="search-btn">Elanlari goster</button>
         </form>
       </section>
 
