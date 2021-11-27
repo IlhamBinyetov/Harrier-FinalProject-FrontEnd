@@ -1,0 +1,228 @@
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+main {
+  .blog-section {
+    background-color: initial;
+    display: flex;
+    justify-content: space-between;
+
+    .left-sidebar {
+      .search-bar {
+        border-width: 1px;
+        border-style: solid;
+        border-color: #f5f5f5 #eee hsl(0, 0%, 84%) #eee;
+        box-shadow: 5px 10px 8px 10px #d5d5d5;
+        margin-bottom: 30px;
+        form {
+          display: flex;
+          justify-content: space-evenly;
+          padding: 3%;
+          align-items: center;
+          background-color: white;
+          input {
+            border: none;
+            outline: none;
+            width: 100%;
+            font-size: 13px;
+
+            padding: 10px;
+            color: #333;
+          }
+          button {
+            border: none;
+            background-color: white;
+          }
+        }
+      }
+      .posts-list {
+        background-color: white;
+        h2 {
+          color: #121212;
+          font-size: 22px;
+          font-weight: 500;
+          margin-bottom: 0px;
+          margin-top: 0;
+          padding: 16px 25px 16px 20px;
+
+          display: inline-block;
+          font-family: "Saira Condensed", sans-serif;
+          letter-spacing: 1px;
+          text-transform: uppercase;
+          background: #fbe122;
+          width: 100%;
+        }
+        .posts-item {
+          margin-top: 4%;
+          padding: 15px;
+          img {
+            width: 100%;
+            object-fit: contain;
+            height: auto;
+          }
+          p {
+            margin-top: 2%;
+            a {
+              font-family: "Inter", sans-serif;
+              font-weight: 400;
+              color: #898989;
+            }
+          }
+          span {
+            font-weight: 400;
+            color: #898989;
+          }
+        }
+      }
+    }
+
+    .main-blogs {
+      .blog-item {
+        background-color: #fff;
+        border-width: 1px;
+        border-style: solid;
+        border-color: #eee #eee #d5d5d5 #eee;
+        box-shadow: 5px 10px 8px 10px #d5d5d5;
+        padding: 20px;
+        margin-bottom: 4%;
+        .blog-img {
+          img {
+            width: 100%;
+            object-fit: cover;
+          }
+        }
+        h2 {
+          margin-top: 25px;
+          font-size: 25px;
+          font-family: "Saira Condensed", sans-serif;
+          font-weight: 600;
+          letter-spacing: 0.5px;
+          line-height: 1.3em;
+          margin-bottom: 10px;
+          a {
+            color: #333;
+            &:hover {
+              color: #ed6663;
+            }
+          }
+        }
+        p {
+          font-size: 13px;
+          color: #a7a7a7;
+        }
+        .button {
+          margin-top: 5%;
+          .detail-btn {
+            background-color: #fbe122;
+            font-size: 18px;
+            text-transform: uppercase;
+            font-weight: 400;
+            color: #333;
+            padding: 10px 25px 8px 25px;
+
+            &:hover {
+              background: #23292e;
+              padding: 10px 25px 8px 25px;
+              border: none;
+              border-bottom: 3px #0d1012 solid;
+              color: white;
+            }
+          }
+        }
+      }
+      .pagination {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+    }
+  }
+}
+
+.features-section {
+  background-color: white;
+  padding: 30px;
+  .features {
+    .feature-element {
+      .feature-first-p {
+        font-size: 26px;
+        font-weight: 600;
+        letter-spacing: 0.5px;
+        color: #333;
+        margin: 0px;
+      }
+      .feature-second-p {
+        color: #999;
+        padding: 0px;
+        margin: 0px;
+        padding-top: 3px;
+      }
+    }
+  }
+}
+.newsletter-section {
+  background: url(https://klbtheme.com/harrier/wp-content/uploads/2019/05/newsletter-bg.jpg);
+  height: 300px;
+  h5 {
+    color: #fbe122;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin: auto;
+    padding-top: 30px;
+    font-weight: 500;
+    text-align: center;
+    font-size: 26px;
+  }
+  h4 {
+    margin-bottom: 23px;
+    display: block;
+    padding: 0px;
+    font-family: "Saira Condensed", sans-serif;
+    font-size: 30px;
+    letter-spacing: 1px;
+    font-weight: 600;
+    text-transform: uppercase;
+    color: #fff;
+    text-align: center;
+  }
+  .form-elements {
+    text-align: center;
+    form {
+      input {
+        border: none;
+        background: #fff;
+        width: 30%;
+        display: inline;
+        color: #a7a7a7;
+        line-height: 20px;
+        background-color: #fff;
+        outline: none;
+        font-size: 14px;
+        font-family: open sans, sans-serif;
+        padding: 20px;
+      }
+      .subs-btn {
+        background-color: yellow;
+        color: black;
+        padding: 19px 28px 20px 28px;
+        cursor: pointer;
+        font-weight: 500;
+        font-size: 15px;
+        text-transform: uppercase;
+        border: none;
+        &:hover {
+          background-color: #333;
+          color: white;
+          .envelope {
+            color: white;
+          }
+        }
+      }
+    }
+  }
+}
