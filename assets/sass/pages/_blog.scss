@@ -88,7 +88,7 @@ main {
         border-style: solid;
         border-color: #eee #eee #d5d5d5 #eee;
         box-shadow: 5px 10px 8px 10px #d5d5d5;
-        padding: 20px;
+        padding: 30px;
         margin-bottom: 4%;
         .blog-img {
           img {
@@ -111,9 +111,15 @@ main {
             }
           }
         }
-        p {
+        .date-content {
           font-size: 13px;
           color: #a7a7a7;
+          border-bottom: 1px solid #e5e5e5;
+          padding-bottom: 10px;
+        }
+        .blog-mini-info {
+          font-size: 14px;
+          line-height: 1.9em;
         }
         .button {
           margin-top: 5%;

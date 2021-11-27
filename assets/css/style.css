@@ -9851,7 +9851,7 @@ main .blog-section {
     border-style: solid;
     border-color: #eee #eee #d5d5d5 #eee;
     box-shadow: 5px 10px 8px 10px #d5d5d5;
-    padding: 20px;
+    padding: 30px;
     margin-bottom: 4%; }
     main .blog-section .main-blogs .blog-item .blog-img img {
       width: 100%;
@@ -9868,9 +9868,14 @@ main .blog-section {
         color: #333; }
         main .blog-section .main-blogs .blog-item h2 a:hover {
           color: #ed6663; }
-    main .blog-section .main-blogs .blog-item p {
+    main .blog-section .main-blogs .blog-item .date-content {
       font-size: 13px;
-      color: #a7a7a7; }
+      color: #a7a7a7;
+      border-bottom: 1px solid #e5e5e5;
+      padding-bottom: 10px; }
+    main .blog-section .main-blogs .blog-item .blog-mini-info {
+      font-size: 14px;
+      line-height: 1.9em; }
     main .blog-section .main-blogs .blog-item .button {
       margin-top: 5%; }
       main .blog-section .main-blogs .blog-item .button .detail-btn {
@@ -9956,4 +9961,196 @@ main .blog-section {
         background-color: #333;
         color: white; }
         .newsletter-section .form-elements form .subs-btn:hover .envelope {
+          color: white; }
+
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0; }
+
+main .blog-detail {
+  width: 95%;
+  margin: auto; }
+  main .blog-detail .detail-item {
+    background-color: #fff;
+    border-width: 1px;
+    border-style: solid;
+    border-color: #eee #eee #d5d5d5 #eee;
+    box-shadow: 5px 10px 8px 10px #d5d5d5;
+    padding: 30px;
+    margin-bottom: 4%; }
+    main .blog-detail .detail-item .detail-img img {
+      width: 100%;
+      object-fit: cover; }
+    main .blog-detail .detail-item .detail-info h2 {
+      margin-top: 25px;
+      font-size: 25px;
+      font-family: "Saira Condensed", sans-serif;
+      font-weight: 600;
+      letter-spacing: 0.5px;
+      line-height: 1.3em;
+      margin-bottom: 10px; }
+    main .blog-detail .detail-item .detail-info .date-content {
+      font-size: 13px;
+      color: #a7a7a7;
+      border-bottom: 1px solid #e5e5e5;
+      padding-bottom: 10px; }
+    main .blog-detail .detail-item .detail-description p {
+      font-size: 14px;
+      line-height: 1.9em;
+      margin: 10px; }
+  main .blog-detail .detail-comments {
+    background-color: #fff;
+    border-width: 1px;
+    border-style: solid;
+    border-color: #eee #eee #d5d5d5 #eee;
+    box-shadow: 5px 10px 8px 10px #d5d5d5;
+    padding: 30px;
+    margin-bottom: 4%; }
+    main .blog-detail .detail-comments .comment-header h3 {
+      color: #333e48;
+      display: block;
+      letter-spacing: normal;
+      line-height: 21px;
+      margin: auto;
+      margin-bottom: 10px;
+      font-size: 22px;
+      font-family: "Saira Condensed", sans-serif;
+      font-weight: 600; }
+    main .blog-detail .detail-comments .comment-list {
+      margin-top: 4%;
+      display: flex;
+      justify-items: center;
+      border-bottom: 1px solid #e5e5e5;
+      padding: 3%; }
+      main .blog-detail .detail-comments .comment-list .user-img img {
+        width: 70px;
+        height: 70px;
+        border-radius: 50%; }
+      main .blog-detail .detail-comments .comment-list .comment-info {
+        padding: 1%; }
+        main .blog-detail .detail-comments .comment-list .comment-info strong {
+          margin-right: 5px; }
+        main .blog-detail .detail-comments .comment-list .comment-info p {
+          margin-top: 2%; }
+    main .blog-detail .detail-comments .reply-part h3 {
+      line-height: 21px;
+      margin-top: 3%;
+      color: #333e48;
+      display: block;
+      font-size: 18px;
+      font-weight: 500;
+      text-transform: uppercase; }
+    main .blog-detail .detail-comments .reply-part span {
+      color: red; }
+    main .blog-detail .detail-comments .reply-part form {
+      margin-top: 3%; }
+      main .blog-detail .detail-comments .reply-part form textarea {
+        padding: 30px 10px;
+        outline: none;
+        color: #999;
+        border: 1px solid #ddd;
+        border-radius: 5px;
+        width: 100%; }
+      main .blog-detail .detail-comments .reply-part form input {
+        width: 100%;
+        padding: 8px 10px;
+        outline: none;
+        color: #999;
+        border: 1px solid #ddd;
+        border-radius: 5px;
+        margin-top: 2%; }
+      main .blog-detail .detail-comments .reply-part form .checkbox {
+        margin-top: 2%;
+        display: flex;
+        align-items: center;
+        padding-left: 2%; }
+        main .blog-detail .detail-comments .reply-part form .checkbox input {
+          width: max-content;
+          margin-top: 0; }
+        main .blog-detail .detail-comments .reply-part form .checkbox label {
+          font-weight: normal;
+          font-size: 13px;
+          color: #333; }
+      main .blog-detail .detail-comments .reply-part form button {
+        padding: 10px;
+        line-height: 44px;
+        font-size: 18px;
+        font-weight: 500;
+        background: #fbe122;
+        border: none;
+        color: #121212;
+        margin-top: 3%;
+        border-radius: 10px; }
+        main .blog-detail .detail-comments .reply-part form button:hover {
+          background-color: #ed6663;
+          color: #fff; }
+
+main .features-section {
+  background-color: white;
+  padding: 30px; }
+  main .features-section .features .feature-element .feature-first-p {
+    font-size: 26px;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+    color: #333;
+    margin: 0px; }
+  main .features-section .features .feature-element .feature-second-p {
+    color: #999;
+    padding: 0px;
+    margin: 0px;
+    padding-top: 3px; }
+
+main .newsletter-section {
+  background: url(https://klbtheme.com/harrier/wp-content/uploads/2019/05/newsletter-bg.jpg);
+  height: 300px; }
+  main .newsletter-section h5 {
+    color: #fbe122;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin: auto;
+    padding-top: 30px;
+    font-weight: 500;
+    text-align: center;
+    font-size: 26px; }
+  main .newsletter-section h4 {
+    margin-bottom: 23px;
+    display: block;
+    padding: 0px;
+    font-family: "Saira Condensed", sans-serif;
+    font-size: 30px;
+    letter-spacing: 1px;
+    font-weight: 600;
+    text-transform: uppercase;
+    color: #fff;
+    text-align: center; }
+  main .newsletter-section .form-elements {
+    text-align: center; }
+    main .newsletter-section .form-elements form input {
+      border: none;
+      background: #fff;
+      width: 30%;
+      display: inline;
+      color: #a7a7a7;
+      line-height: 20px;
+      background-color: #fff;
+      outline: none;
+      font-size: 14px;
+      font-family: open sans, sans-serif;
+      padding: 20px; }
+    main .newsletter-section .form-elements form .subs-btn {
+      background-color: yellow;
+      color: black;
+      padding: 19px 28px 20px 28px;
+      cursor: pointer;
+      font-weight: 500;
+      font-size: 15px;
+      text-transform: uppercase;
+      border: none; }
+      main .newsletter-section .form-elements form .subs-btn:hover {
+        background-color: #333;
+        color: white; }
+        main .newsletter-section .form-elements form .subs-btn:hover .envelope {
           color: white; }
