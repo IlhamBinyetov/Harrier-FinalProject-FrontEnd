@@ -8771,11 +8771,31 @@ body {
         margin-left: 10px; }
     .car-detail .car-info .car-summary .price-block {
       padding-top: 3%;
-      padding-bottom: 3%; }
+      padding-bottom: 3%;
+      display: flex;
+      justify-content: space-between; }
       .car-detail .car-info .car-summary .price-block p {
         font-size: 26px;
         color: #fb4e4a;
         font-weight: 500; }
+      .car-detail .car-info .car-summary .price-block .cart {
+        padding: 10px;
+        background-color: #fbe122;
+        color: black; }
+        .car-detail .car-info .car-summary .price-block .cart i {
+          margin-right: 10px; }
+        .car-detail .car-info .car-summary .price-block .cart:hover {
+          background-color: #121212;
+          color: white; }
+      .car-detail .car-info .car-summary .price-block .wishlist {
+        background-color: #e5e5e5;
+        padding: 10px;
+        color: black; }
+        .car-detail .car-info .car-summary .price-block .wishlist i {
+          margin-right: 10px; }
+        .car-detail .car-info .car-summary .price-block .wishlist:hover {
+          background-color: #121212;
+          color: white; }
     .car-detail .car-info .car-summary .mini-info {
       border: 1px solid #e5e5e5; }
       .car-detail .car-info .car-summary .mini-info h2 {
@@ -9094,33 +9114,63 @@ body {
   width: 95%;
   margin: auto;
   padding-top: 5%; }
-  .list-section .popular-vehicles {
-    background-color: white;
+  .list-section .vehicles {
+    background-color: initial;
     height: max-content;
     padding-bottom: 2%; }
-    .list-section .popular-vehicles .car-item {
-      border-bottom: 1px solid #e5e5e5; }
-      .list-section .popular-vehicles .car-item .car-image img {
-        width: 100%;
-        border: 1px solid #e5e5e5;
-        margin-left: 10px;
-        height: 100%;
-        object-fit: cover; }
-      .list-section .popular-vehicles .car-item .car-details p a {
-        color: black; }
-      .list-section .popular-vehicles .car-item .car-details .car-brand {
-        margin-left: 10px; }
-      .list-section .popular-vehicles .car-item .car-details .car-price {
-        color: red;
-        margin-top: 10px; }
-    .list-section .popular-vehicles .part-name {
-      background-color: #23292e; }
-      .list-section .popular-vehicles .part-name h3 {
-        color: #fff;
-        font-size: 20px;
-        font-weight: 500;
-        margin: 0;
-        padding: 15px; }
+    .list-section .vehicles .car-categories {
+      margin-bottom: 4%;
+      background-color: white; }
+      .list-section .vehicles .car-categories .category-name {
+        background-color: #23292e; }
+        .list-section .vehicles .car-categories .category-name h3 {
+          color: #fff;
+          font-size: 20px;
+          font-weight: 500;
+          margin: 0;
+          padding: 15px; }
+      .list-section .vehicles .car-categories ul li {
+        border-bottom: 1px #f2f2f2 solid;
+        padding: 10px 25px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center; }
+        .list-section .vehicles .car-categories ul li a {
+          color: #333;
+          text-transform: uppercase;
+          display: block;
+          font-size: 16px;
+          font-weight: 500;
+          letter-spacing: 1px; }
+        .list-section .vehicles .car-categories ul li img {
+          width: 20%; }
+    .list-section .vehicles .popular-vehicles {
+      background-color: white;
+      height: max-content;
+      padding-bottom: 2%; }
+      .list-section .vehicles .popular-vehicles .car-item {
+        border-bottom: 1px solid #e5e5e5; }
+        .list-section .vehicles .popular-vehicles .car-item .car-image img {
+          width: 100%;
+          border: 1px solid #e5e5e5;
+          margin-left: 10px;
+          height: 100%;
+          object-fit: cover; }
+        .list-section .vehicles .popular-vehicles .car-item .car-details p a {
+          color: black; }
+        .list-section .vehicles .popular-vehicles .car-item .car-details .car-brand {
+          margin-left: 10px; }
+        .list-section .vehicles .popular-vehicles .car-item .car-details .car-price {
+          color: red;
+          margin-top: 10px; }
+      .list-section .vehicles .popular-vehicles .part-name {
+        background-color: #23292e; }
+        .list-section .vehicles .popular-vehicles .part-name h3 {
+          color: #fff;
+          font-size: 20px;
+          font-weight: 500;
+          margin: 0;
+          padding: 15px; }
   .list-section .carlists {
     padding: 10px;
     background-color: white; }

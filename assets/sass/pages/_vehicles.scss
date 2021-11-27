@@ -17,47 +17,88 @@
   margin: auto;
   padding-top: 5%;
 
-  .popular-vehicles {
-    background-color: white;
+  .vehicles {
+    background-color: initial;
     height: max-content;
     padding-bottom: 2%;
+    .car-categories {
+      margin-bottom: 4%;
+      background-color: white;
 
-    .car-item {
-      border-bottom: 1px solid #e5e5e5;
-      .car-image {
-        img {
-          width: 100%;
-          border: 1px solid #e5e5e5;
-          margin-left: 10px;
-          height: 100%;
-          object-fit: cover;
+      .category-name {
+        background-color: #23292e;
+        h3 {
+          color: #fff;
+          font-size: 20px;
+          font-weight: 500;
+          margin: 0;
+          padding: 15px;
         }
       }
 
-      .car-details {
-        p {
+      ul {
+        li {
+          border-bottom: 1px #f2f2f2 solid;
+          padding: 10px 25px;
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
           a {
-            color: black;
+            color: #333;
+            text-transform: uppercase;
+            display: block;
+            font-size: 16px;
+            font-weight: 500;
+            letter-spacing: 1px;
           }
-        }
-        .car-brand {
-          margin-left: 10px;
-        }
-        .car-price {
-          color: red;
-          margin-top: 10px;
+          img {
+            width: 20%;
+          }
         }
       }
     }
+    .popular-vehicles {
+      background-color: white;
+      height: max-content;
+      padding-bottom: 2%;
 
-    .part-name {
-      background-color: #23292e;
-      h3 {
-        color: #fff;
-        font-size: 20px;
-        font-weight: 500;
-        margin: 0;
-        padding: 15px;
+      .car-item {
+        border-bottom: 1px solid #e5e5e5;
+        .car-image {
+          img {
+            width: 100%;
+            border: 1px solid #e5e5e5;
+            margin-left: 10px;
+            height: 100%;
+            object-fit: cover;
+          }
+        }
+
+        .car-details {
+          p {
+            a {
+              color: black;
+            }
+          }
+          .car-brand {
+            margin-left: 10px;
+          }
+          .car-price {
+            color: red;
+            margin-top: 10px;
+          }
+        }
+      }
+
+      .part-name {
+        background-color: #23292e;
+        h3 {
+          color: #fff;
+          font-size: 20px;
+          font-weight: 500;
+          margin: 0;
+          padding: 15px;
+        }
       }
     }
   }

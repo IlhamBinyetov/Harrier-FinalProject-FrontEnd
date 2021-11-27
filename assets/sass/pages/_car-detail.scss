@@ -84,10 +84,36 @@
       .price-block {
         padding-top: 3%;
         padding-bottom: 3%;
+        display: flex;
+        justify-content: space-between;
         p {
           font-size: 26px;
           color: #fb4e4a;
           font-weight: 500;
+        }
+        .cart {
+          padding: 10px;
+          background-color: #fbe122;
+          color: black;
+          i {
+            margin-right: 10px;
+          }
+          &:hover {
+            background-color: #121212;
+            color: white;
+          }
+        }
+        .wishlist {
+          background-color: #e5e5e5;
+          padding: 10px;
+          color: black;
+          i {
+            margin-right: 10px;
+          }
+          &:hover {
+            background-color: #121212;
+            color: white;
+          }
         }
       }
 
