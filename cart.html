@@ -33,7 +33,7 @@
       referrerpolicy="no-referrer"
     />
     <link rel="stylesheet" href="./assets/css/style.css" />
-    <title>Wishlist</title>
+    <title>Cart</title>
   </head>
   <body>
     <!-- HEADER AREA START -->
@@ -187,57 +187,62 @@
     </header>
 
     <main>
-      <section class="wishlist-section">
-        <h2>My Wishlist</h2>
-        <div class="wishlist-part">
-          <form action="" method="post" autocomplete="off">
+      <section class="cart-section">
+        <form action="" method="post">
+          <table>
+            <thead>
+              <tr>
+                <th></th>
+                <th>Product</th>
+                <th>Price</th>
+                <th>Subtotal</th>
+                <th></th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td><img src="./assets/images/car1.jpg" alt="" /></td>
+                <td>Best Cell Phone Car TurboCharges Mercedes-Benz</td>
+                <td>£ 36.00</td>
+                <td>£36.00</td>
+                <td>
+                  <button><i class="far fa-trash-alt"></i></button>
+                </td>
+              </tr>
+            </tbody>
+            <tbody>
+              <tr>
+                <td><img src="./assets/images/car2.jpg" alt="" /></td>
+                <td>Best Cell Phone Car TurboCharges Mercedes-Benz</td>
+                <td>£ 36.00</td>
+                <td>£36.00</td>
+                <td>
+                  <button><i class="far fa-trash-alt"></i></button>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+
+          <div class="cart-totals">
+            <h2>Cart Totals</h2>
             <table>
-              <thead>
-                <tr>
-                  <th><input type="checkbox" /></th>
-                  <th></th>
-                  <th></th>
-                  <th class="product-name">Product Name</th>
-                  <th class="price">Price</th>
-                  <th class="date">Date Added</th>
-                  <th></th>
-                </tr>
-              </thead>
               <tbody>
                 <tr>
-                  <td><input type="checkbox" /></td>
-                  <td>
-                    <button class="remove">
-                      <i class="far fa-times-circle"></i>
-                    </button>
-                  </td>
-                  <td><img src="./assets/images/car2.jpg" alt="" /></td>
-                  <td>Gorgeous Mercedes-Benz E-Class All-Terrain Luxury</td>
-                  <td>$ 40000</td>
-                  <td>November 27, 2021</td>
-                  <td><button class="add-cart">Add To Cart</button></td>
+                  <th>Subtotal</th>
+                  <td>£505.00</td>
                 </tr>
-              </tbody>
-              <tbody>
                 <tr>
-                  <td><input type="checkbox" /></td>
-                  <td>
-                    <button class="remove">
-                      <i class="far fa-times-circle"></i>
-                    </button>
-                  </td>
-                  <td><img src="./assets/images/car2.jpg" alt="" /></td>
-                  <td>Gorgeous Mercedes-Benz E-Class All-Terrain Luxury</td>
-                  <td>$ 40000</td>
-                  <td>November 27, 2021</td>
-                  <td><button class="add-cart">Add To Cart</button></td>
+                  <th>Total</th>
+                  <td>£505.00</td>
                 </tr>
               </tbody>
             </table>
 
-            <button class="all-cart">Add All To Cart</button>
-          </form>
-        </div>
+            <div class="checkout">
+              <a href=""><i class="fas fa-check"></i>Proceed To Checkout</a>
+            </div>
+          </div>
+        </form>
       </section>
 
       <section class="features-section">
@@ -280,6 +285,7 @@
           </div>
         </div>
       </section>
+
       <section class="newsletter-section">
         <h5>NEWSLETTER</h5>
         <h4>GET NOTIFIED OF ANY UPDATES!</h4>
@@ -310,7 +316,6 @@
       </section>
     </main>
 
-    <!-- FOOTER AREA START -->
     <footer class="footer-section">
       <div class="container-fluid">
         <div class="footer d-flex justify-content-between">

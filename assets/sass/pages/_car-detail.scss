@@ -6,537 +6,548 @@
   padding: 0;
 }
 
-.car-detail {
-  background-color: white;
-  width: 95%;
-  padding: 50px;
-  margin: 5% auto;
-  .car-info {
-    display: flex;
-    justify-content: space-between;
-    .car-images {
-      & .car-pics-slide {
-        padding-top: 20px;
-        padding-left: 30px;
-        display: flex;
-        justify-content: space-evenly;
-        img {
-          width: 100%;
-        }
-      }
-
-      .email-us {
-        width: 100%;
-        background: #ed6663;
-        border-bottom: 3px #d23b37 solid;
-        font-family: "Saira Condensed", sans-serif;
-        font-size: 20px;
-        font-weight: 500;
-        text-transform: uppercase;
-        border: none;
-        color: #fff;
-        display: block;
-        line-height: 38px;
-        letter-spacing: 1px;
-        border-radius: 0;
-        text-align: center;
-        margin-top: 20%;
-        padding: 20px;
-      }
-    }
-
-    .car-summary {
-      .brand {
-        text-transform: uppercase;
-      }
-      .product-name {
-        h1 {
-          color: #333;
-          font-size: 46px;
-          font-weight: 600;
-          font-family: "Saira Condensed", sans-serif;
-          padding-bottom: 12px;
-          &:hover {
-            color: #ed6663;
-          }
-        }
-      }
-
-      .product-contact {
-        padding-bottom: 10px;
-        a {
-          i {
-            font-size: 13px;
-            margin-right: 2px;
-            color: #fbe122;
-          }
-          span {
-            color: #999;
-          }
-        }
-        .email-icon {
-          margin-left: 10px;
-        }
-
-        border-bottom: 1px solid #e5e5e5;
-      }
-
-      .price-block {
-        padding-top: 3%;
-        padding-bottom: 3%;
-        display: flex;
-        justify-content: space-between;
-        p {
-          font-size: 26px;
-          color: #fb4e4a;
-          font-weight: 500;
-        }
-        .cart {
-          padding: 10px;
-          background-color: #fbe122;
-          color: black;
-          i {
-            margin-right: 10px;
-          }
-          &:hover {
-            background-color: #121212;
-            color: white;
-          }
-        }
-        .wishlist {
-          background-color: #e5e5e5;
-          padding: 10px;
-          color: black;
-          i {
-            margin-right: 10px;
-          }
-          &:hover {
-            background-color: #121212;
-            color: white;
-          }
-        }
-      }
-
-      .mini-info {
-        border: 1px solid #e5e5e5;
-        h2 {
-          color: #121212;
-          font-size: 22px;
-          font-weight: 500;
-          font-family: "Saira Condensed", sans-serif;
-          letter-spacing: 1px;
-          text-transform: uppercase;
-          background-color: #fbe122;
-          width: 50%;
-          margin: 0;
-          padding: 15px;
-        }
-        table {
-          tbody {
-            display: flex;
-            flex-wrap: wrap;
-          }
-          tr {
-            font-size: 14px;
-            padding: 14px 12px;
-            display: flex;
-            justify-content: space-between;
-          }
-        }
-      }
-
-      .social-icons {
-        margin-top: 5%;
-        font-size: 20px;
-
-        i {
-          border: 1px solid #e5e5e5;
-          border-radius: 10%;
-          padding: 15px;
-          color: #888;
-        }
-      }
-    }
-
-    .slick-next {
-      &:before {
-        font-size: 30px;
-        color: black;
-      }
-    }
-    .slick-prev {
-      &:before {
-        font-size: 30px;
-        color: black;
-      }
-    }
-  }
-}
-
-.car-main-infos {
-  background-color: white;
-  width: 95%;
-  padding: 50px;
-  margin: 5% auto;
-
-  ul {
-    border-bottom: 1px solid #e5e5e5;
-    background: #fff;
-    color: #333;
-    li {
-      a {
-        color: #333;
-        font-weight: 500;
-      }
-    }
-  }
-
-  .content-menu {
-    margin-top: 30px;
-    p {
-      font-size: 15px;
-      padding: 10px;
-    }
-
-    table {
-      width: 100%;
-      tbody {
-        display: flex;
-        flex-wrap: wrap;
-        tr {
-          font-size: 14px;
-          padding: 20px 12px;
-          display: flex;
-          justify-content: space-between;
-          th {
-            border-top: none;
-            width: 100%;
-            font-size: 16px;
-          }
-          td {
-            border-top: none;
-            width: 100%;
-            text-align: right;
-            i {
-              color: #66cc66;
-            }
-          }
-
-          &:nth-child(3),
-          &:nth-child(4),
-          &:nth-child(7),
-          &:nth-child(8),
-          &:nth-child(11),
-          &:nth-child(12) {
-            background-color: #f8f8f8;
-          }
-        }
-      }
-    }
-
-    .comments {
-      padding: 10px;
-      h3 {
-        color: #333e48;
-        display: block;
-        letter-spacing: normal;
-        line-height: 21px;
-        margin-bottom: 5%;
-        font-size: 22px;
-        font-family: "Saira Condensed", sans-serif;
-        font-weight: 600;
-      }
-      .comment-block {
-        display: flex;
-        padding-bottom: 20px;
-        border-bottom: 1px solid #e5e5e5;
-        img {
-          border-radius: 50%;
-          width: 100%;
-        }
-        .comment-info {
-          padding: 2%;
-          a {
-            color: red;
-          }
-          div {
-            margin-bottom: 20px;
-          }
-        }
-        .comment-img {
-          padding: 3%;
-        }
-      }
-      .comment-form {
-        h3 {
-          line-height: 21px;
-          color: #333e48;
-          display: block;
-          font-size: 18px;
-          font-weight: 500;
-          text-transform: uppercase;
-
-          margin-bottom: 0;
-        }
-        p {
-          padding-left: 0;
-          padding-top: 3%;
-          .star {
-            color: red;
-            margin-left: 5px;
-          }
-        }
-
-        form {
-          .form-first {
-            input {
-              margin-top: 2%;
-              width: 100%;
-              padding: 1%;
-              border: 1px solid #e5e5e5;
-              outline: none;
-              border-radius: 5px;
-            }
-            textarea {
-              width: 100%;
-              padding: 2%;
-              border: 1px solid #e5e5e5;
-              outline: none;
-              border-radius: 5px;
-            }
-          }
-          .form-second {
-            margin-top: 20px;
-            input {
-              width: 14px;
-              height: 14px;
-            }
-          }
-          .submit {
-            margin-top: 2%;
-            display: inline-block;
-            height: 44px;
-            line-height: 44px;
-            font-size: 18px;
-            font-weight: 500;
-            color: #121212;
-            padding: 0 35px;
-            background-color: #fbe122;
-            border: none;
-            &:hover {
-              background: #ed6663;
-              color: #fff;
-            }
-          }
-        }
-      }
-    }
-  }
-}
-
-.related-vehicles {
-  margin: 5% auto;
-
-  & .deals {
-    margin-top: 30px;
-    padding-left: 33px;
-    padding-right: 33px;
-    margin-bottom: 30px;
-    & .deals-header {
+main {
+  .car-detail {
+    background-color: white;
+    width: 95%;
+    padding: 50px;
+    margin: 5% auto;
+    .car-info {
       display: flex;
-      background-color: rgb(53, 82, 92);
-      height: 80px;
-      & .first-element {
-        background-color: #fbe122;
-        h2 {
-          margin-top: 30px;
+      justify-content: space-between;
+      .car-images {
+        & .car-pics-slide {
+          padding-top: 20px;
+          padding-left: 30px;
+          display: flex;
+          justify-content: space-evenly;
+          img {
+            width: 100%;
+          }
+        }
+
+        .email-us {
+          width: 100%;
+          background: #ed6663;
+          border-bottom: 3px #d23b37 solid;
+          font-family: "Saira Condensed", sans-serif;
           font-size: 20px;
           font-weight: 500;
-          color: black;
-          letter-spacing: 1px;
           text-transform: uppercase;
-          padding-left: 20px;
+          border: none;
+          color: #fff;
+          display: block;
+          line-height: 38px;
+          letter-spacing: 1px;
+          border-radius: 0;
+          text-align: center;
+          margin-top: 20%;
+          padding: 20px;
         }
       }
-    }
-    & .cars-footer {
-      display: flex;
-      padding-top: 20px;
-      position: relative;
-      background-color: white;
-      .car-item {
-        z-index: 0;
-        padding: 10px;
-        border-right: 1px #eaeaea solid;
-        position: relative;
-        & .seperator {
-          background: #ed6663;
-          width: 10%;
-          margin: 0 auto;
-          padding: 2px;
-          height: 5px;
+
+      .car-summary {
+        .brand {
+          text-transform: uppercase;
         }
-
-        & .item-info {
-          position: relative;
-          & img {
-            width: 100%;
-          }
-
-          p {
-            padding-top: 30px;
-            text-align: center;
-          }
-        }
-
-        & .item-price {
-          padding-top: 10px;
-          p {
-            text-align: center;
-            font-weight: 500;
-            font-size: 22px;
-            color: #121212;
-          }
-        }
-        & .other-info {
-          border-top: 1px #eaeaea solid;
-          color: #777;
-          padding-top: 40px;
-
-          .infos {
-            text-align: center;
-            p {
-              padding-top: 5px;
+        .product-name {
+          h1 {
+            color: #333;
+            font-size: 46px;
+            font-weight: 600;
+            font-family: "Saira Condensed", sans-serif;
+            padding-bottom: 12px;
+            &:hover {
+              color: #ed6663;
             }
           }
         }
 
-        .hover-items {
-          display: none;
-          position: absolute;
-          top: 20%;
-          left: 12%;
-          z-index: 1000;
+        .product-contact {
+          padding-bottom: 10px;
+          a {
+            i {
+              font-size: 13px;
+              margin-right: 2px;
+              color: #fbe122;
+            }
+            span {
+              color: #999;
+            }
+          }
+          .email-icon {
+            margin-left: 10px;
+          }
 
-          .rhombus {
-            margin-left: 20px;
-            height: 50px;
-            width: 50px;
-            border: 1px solid black;
-            transform: rotate(45deg);
-            background-color: white;
+          border-bottom: 1px solid #e5e5e5;
+        }
+
+        .price-block {
+          padding-top: 3%;
+          padding-bottom: 3%;
+          display: flex;
+          justify-content: space-between;
+          p {
+            font-size: 26px;
+            color: #fb4e4a;
+            font-weight: 500;
+          }
+          .cart {
+            padding: 10px;
+            background-color: #fbe122;
+            color: black;
+            i {
+              margin-right: 10px;
+            }
             &:hover {
               background-color: #121212;
-              a {
-                color: white;
+              color: white;
+            }
+          }
+          .wishlist {
+            background-color: #e5e5e5;
+            padding: 10px;
+            color: black;
+            i {
+              margin-right: 10px;
+            }
+            &:hover {
+              background-color: #121212;
+              color: white;
+            }
+          }
+        }
+
+        .mini-info {
+          border: 1px solid #e5e5e5;
+          h2 {
+            color: #121212;
+            font-size: 22px;
+            font-weight: 500;
+            font-family: "Saira Condensed", sans-serif;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+            background-color: #fbe122;
+            width: 50%;
+            margin: 0;
+            padding: 15px;
+          }
+          table {
+            tbody {
+              display: flex;
+              flex-wrap: wrap;
+            }
+            tr {
+              font-size: 14px;
+              padding: 14px 12px;
+              display: flex;
+              justify-content: space-between;
+            }
+          }
+        }
+
+        .social-icons {
+          margin-top: 5%;
+          font-size: 20px;
+
+          i {
+            border: 1px solid #e5e5e5;
+            border-radius: 10%;
+            padding: 15px;
+            color: #888;
+          }
+        }
+      }
+
+      .slick-next {
+        &:before {
+          font-size: 30px;
+          color: black;
+        }
+      }
+      .slick-prev {
+        &:before {
+          font-size: 30px;
+          color: black;
+        }
+      }
+    }
+  }
+
+  .car-main-infos {
+    background-color: white;
+    width: 95%;
+    padding: 50px;
+    margin: 5% auto;
+
+    ul {
+      border-bottom: 1px solid #e5e5e5;
+      background: #fff;
+      color: #333;
+      li {
+        a {
+          color: #333;
+          font-weight: 500;
+        }
+      }
+    }
+
+    .content-menu {
+      margin-top: 30px;
+      p {
+        font-size: 15px;
+        padding: 10px;
+      }
+
+      table {
+        width: 100%;
+        tbody {
+          display: flex;
+          flex-wrap: wrap;
+          tr {
+            font-size: 14px;
+            padding: 20px 12px;
+            display: flex;
+            justify-content: space-between;
+            th {
+              border-top: none;
+              width: 100%;
+              font-size: 16px;
+            }
+            td {
+              border-top: none;
+              width: 100%;
+              text-align: right;
+              i {
+                color: #66cc66;
               }
             }
 
-            div {
-              font-size: 30px;
-              text-align: center;
-              margin: 0 auto;
-              transform: rotate(-45deg);
+            &:nth-child(3),
+            &:nth-child(4),
+            &:nth-child(7),
+            &:nth-child(8),
+            &:nth-child(11),
+            &:nth-child(12) {
+              background-color: #f8f8f8;
+            }
+          }
+        }
+      }
 
-              a {
-                padding: 5px;
-                color: black;
-                i {
-                  font-size: 25px;
+      .comments {
+        padding: 10px;
+        h3 {
+          color: #333e48;
+          display: block;
+          letter-spacing: normal;
+          line-height: 21px;
+          margin-bottom: 5%;
+          font-size: 22px;
+          font-family: "Saira Condensed", sans-serif;
+          font-weight: 600;
+        }
+        .comment-block {
+          display: flex;
+          padding-bottom: 20px;
+          border-bottom: 1px solid #e5e5e5;
+          img {
+            border-radius: 50%;
+            width: 100%;
+          }
+          .comment-info {
+            padding: 2%;
+            a {
+              color: red;
+            }
+            div {
+              margin-bottom: 20px;
+            }
+          }
+          .comment-img {
+            padding: 3%;
+          }
+        }
+        .comment-form {
+          h3 {
+            line-height: 21px;
+            color: #333e48;
+            display: block;
+            font-size: 18px;
+            font-weight: 500;
+            text-transform: uppercase;
+
+            margin-bottom: 0;
+          }
+          p {
+            padding-left: 0;
+            padding-top: 3%;
+            .star {
+              color: red;
+              margin-left: 5px;
+            }
+          }
+
+          form {
+            .form-first {
+              input {
+                margin-top: 2%;
+                width: 100%;
+                padding: 1%;
+                border: 1px solid #e5e5e5;
+                outline: none;
+                border-radius: 5px;
+              }
+              textarea {
+                width: 100%;
+                padding: 2%;
+                border: 1px solid #e5e5e5;
+                outline: none;
+                border-radius: 5px;
+              }
+            }
+            .form-second {
+              margin-top: 20px;
+              input {
+                width: 14px;
+                height: 14px;
+              }
+            }
+            .submit {
+              margin-top: 2%;
+              display: inline-block;
+              height: 44px;
+              line-height: 44px;
+              font-size: 18px;
+              font-weight: 500;
+              color: #121212;
+              padding: 0 35px;
+              background-color: #fbe122;
+              border: none;
+              &:hover {
+                background: #ed6663;
+                color: #fff;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .related-vehicles {
+    margin: 5% auto;
+
+    & .deals {
+      margin-top: 30px;
+      padding-left: 33px;
+      padding-right: 33px;
+      margin-bottom: 30px;
+      & .deals-header {
+        display: flex;
+        background-color: rgb(53, 82, 92);
+        height: 80px;
+        & .first-element {
+          background-color: #fbe122;
+          h2 {
+            margin-top: 30px;
+            font-size: 20px;
+            font-weight: 500;
+            color: black;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+            padding-left: 20px;
+          }
+        }
+      }
+      & .cars-footer {
+        display: flex;
+        padding-top: 20px;
+        position: relative;
+        background-color: white;
+        .car-item {
+          z-index: 0;
+          padding: 10px;
+          border-right: 1px #eaeaea solid;
+          position: relative;
+          & .seperator {
+            background: #ed6663;
+            width: 10%;
+            margin: 0 auto;
+            padding: 2px;
+            height: 5px;
+          }
+
+          & .item-info {
+            position: relative;
+            & img {
+              width: 100%;
+            }
+
+            p {
+              padding-top: 30px;
+              text-align: center;
+            }
+          }
+
+          & .item-price {
+            padding-top: 10px;
+            p {
+              text-align: center;
+              font-weight: 500;
+              font-size: 22px;
+              color: #121212;
+            }
+          }
+          & .other-info {
+            border-top: 1px #eaeaea solid;
+            color: #777;
+            padding-top: 40px;
+
+            .infos {
+              text-align: center;
+              p {
+                padding-top: 5px;
+              }
+            }
+          }
+
+          .hover-items {
+            display: none;
+            position: absolute;
+            top: 20%;
+            left: 12%;
+            z-index: 1000;
+
+            .rhombus {
+              margin-left: 20px;
+              height: 50px;
+              width: 50px;
+              border: 1px solid black;
+              transform: rotate(45deg);
+              background-color: white;
+              &:hover {
+                background-color: #121212;
+                a {
+                  color: white;
+                }
+              }
+
+              div {
+                font-size: 30px;
+                text-align: center;
+                margin: 0 auto;
+                transform: rotate(-45deg);
+
+                a {
+                  padding: 5px;
+                  color: black;
+                  i {
+                    font-size: 25px;
+                  }
                 }
               }
             }
           }
-        }
-        &:hover {
-          & .hover-items {
-            display: flex;
+          &:hover {
+            & .hover-items {
+              display: flex;
+            }
           }
         }
       }
     }
   }
-}
 
-.features-section {
-  background-color: white;
-  padding: 30px;
-  .features {
-    .feature-element {
-      .feature-first-p {
-        font-size: 26px;
-        font-weight: 600;
-        letter-spacing: 0.5px;
-        color: #333;
-        margin: 0px;
-      }
-      .feature-second-p {
-        color: #999;
-        padding: 0px;
-        margin: 0px;
-        padding-top: 3px;
+  .features-section {
+    background-color: white;
+    padding: 30px;
+    .features {
+      .feature-element {
+        .feature-first-p {
+          font-size: 26px;
+          font-weight: 600;
+          letter-spacing: 0.5px;
+          color: #333;
+          margin: 0px;
+        }
+        .feature-second-p {
+          color: #999;
+          padding: 0px;
+          margin: 0px;
+          padding-top: 3px;
+        }
       }
     }
   }
-}
-.newsletter-section {
-  background: url(https://klbtheme.com/harrier/wp-content/uploads/2019/05/newsletter-bg.jpg);
-  height: 300px;
-  h5 {
-    color: #fbe122;
-    text-transform: uppercase;
-    letter-spacing: 1px;
-    margin: auto;
-    padding-top: 30px;
-    font-weight: 500;
-    text-align: center;
-    font-size: 26px;
-  }
-  h4 {
-    margin-bottom: 23px;
-    display: block;
-    padding: 0px;
-    font-family: "Saira Condensed", sans-serif;
-    font-size: 30px;
-    letter-spacing: 1px;
-    font-weight: 600;
-    text-transform: uppercase;
-    color: #fff;
-    text-align: center;
-  }
-  .form-elements {
-    text-align: center;
-    form {
-      input {
-        border: none;
-        background: #fff;
-        width: 30%;
-        display: inline;
-        color: #a7a7a7;
-        line-height: 20px;
-        background-color: #fff;
-        outline: none;
-        font-size: 14px;
-        font-family: open sans, sans-serif;
-        padding: 20px;
-      }
-      .subs-btn {
-        background-color: yellow;
-        color: black;
-        padding: 19px 28px 20px 28px;
-        cursor: pointer;
-        font-weight: 500;
-        font-size: 15px;
-        text-transform: uppercase;
-        border: none;
-        &:hover {
-          background-color: #333;
-          color: white;
-          .envelope {
+  .newsletter-section {
+    background: url(https://klbtheme.com/harrier/wp-content/uploads/2019/05/newsletter-bg.jpg);
+    height: 300px;
+    h5 {
+      color: #fbe122;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      margin: auto;
+      padding-top: 30px;
+      font-weight: 500;
+      text-align: center;
+      font-size: 26px;
+    }
+    h4 {
+      margin-bottom: 23px;
+      display: block;
+      padding: 0px;
+      font-family: "Saira Condensed", sans-serif;
+      font-size: 30px;
+      letter-spacing: 1px;
+      font-weight: 600;
+      text-transform: uppercase;
+      color: #fff;
+      text-align: center;
+    }
+    .form-elements {
+      text-align: center;
+      form {
+        input {
+          border: none;
+          background: #fff;
+          width: 30%;
+          display: inline;
+          color: #a7a7a7;
+          line-height: 20px;
+          background-color: #fff;
+          outline: none;
+          font-size: 14px;
+          font-family: open sans, sans-serif;
+          padding: 20px;
+        }
+        .subs-btn {
+          background-color: yellow;
+          color: black;
+          padding: 19px 28px 20px 28px;
+          cursor: pointer;
+          font-weight: 500;
+          font-size: 15px;
+          text-transform: uppercase;
+          border: none;
+          &:hover {
+            background-color: #333;
             color: white;
+            .envelope {
+              color: white;
+            }
           }
         }
       }
+    }
+  }
+
+  .scroll-section {
+    #btn-back-to-top {
+      position: fixed;
+      bottom: 40px;
+      right: 20px;
+      display: none;
     }
   }
 }
