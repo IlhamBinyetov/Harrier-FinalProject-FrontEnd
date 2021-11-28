@@ -1,0 +1,427 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/select2@4.1.0-beta.1/dist/css/select2.min.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.min.css"
+      integrity="sha512-17EgCFERpgZKcm0j0fEq1YCJuyAWdz9KUtv1EjVuaOz8pDnh/0nZxmU6BBXwaaxqoi9PQXnRWqlcDB027hgv9A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css"
+      integrity="sha512-yHknP1/AwR+yx26cB1y0cjvQUMvEa2PFzt1c9LlS4pRQ5NOTZFWbhBig+X9G9eYW/8m0/4OXNx8pxJ6z57x0dw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="./assets/css/style.css" />
+    <title>Checkout</title>
+  </head>
+  <body>
+    <!-- HEADER AREA START -->
+
+    <header class="header">
+      <div class="container-fluid p-0">
+        <div class="navbar">
+          <div class="logo col-12 col-sm-12 col-md-3 col-lg-3">
+            <a href="#">
+              <img src="./assets/images/logo.png" alt="logo" />
+            </a>
+          </div>
+          <div class="header-nav col-12 col-sm-12 col-md-9 col-lg-9">
+            <div class="banners">
+              <div class="banners-firstPart col-sm-12 col-md-5 col-lg-5">
+                <p>Save up to 40% Hurry Limited offer</p>
+                <p style="display: none">
+                  Hot days - 50% Get ready for summer!
+                </p>
+              </div>
+              <div
+                class="
+                  banners-secondPart
+                  d-flex
+                  col-12 col-sm-12 col-md-7 col-lg-7
+                "
+              >
+                <i class="bi bi-clock"></i>
+                <span>Mon - Fri : 09am to 06pm</span>
+                <i class="bi bi-telephone phone"></i>
+                <span>+1 800 789 0000</span>
+              </div>
+            </div>
+            <div class="header-main">
+              <div class="header-menu col-md-6 col-lg-6">
+                <ul>
+                  <li><a href="">HOME</a></li>
+                  <li><a href="">VEHICLES</a></li>
+                  <li><a href="">SHOP</a></li>
+                  <li><a href="">BLOG</a></li>
+                  <li><a href="./contact.html">CONTACT US</a></li>
+                </ul>
+              </div>
+
+              <nav
+                role="navigation"
+                class="pt-3 col-3 col-sm-3 custom-hamburger"
+              >
+                <div id="menuToggle">
+                  <input type="checkbox" />
+                  <span></span>
+                  <span></span>
+                  <span></span>
+                  <ul id="menu">
+                    <a href="#"><li>Home</li></a>
+                    <a href="#"><li>About</li></a>
+                    <a href="#"><li>Info</li></a>
+                    <a href="#"><li>Contact</li></a>
+                  </ul>
+                </div>
+              </nav>
+
+              <div class="header-right col-8 col-sm-8 col-md-6 col-lg-6 pt-2">
+                <div class="search-section col-md-7 col-lg-7">
+                  <form
+                    action=""
+                    method="get"
+                    class="d-flex justify-content-between"
+                  >
+                    <input
+                      type="text"
+                      placeholder="Search here..."
+                      class="search-box"
+                    />
+                    <button type="submit">
+                      <i class="bi bi-search"></i>
+                    </button>
+                  </form>
+                </div>
+                <div class="col-md-1 col-lg-1">
+                  <i class="bi bi-search search-button"></i>
+                </div>
+                <div class="basket-section col-md-1 col-lg-1">
+                  <a href="" class="basket">
+                    <i class="bi bi-cart"></i>
+                    <span class="basket-number">0</span>
+                  </a>
+                  <!-- Cart Menu START -->
+                  <div class="cart-menu">
+                    <div class="cart-header">
+                      <div>
+                        <span class="menu-count">1</span>
+                        <span class="menu-title">item,</span>
+                      </div>
+                      <div class="d-flex">
+                        <span class="menu-price-currency">£</span>
+                        <span class="menu-price-count">36</span>
+                      </div>
+                    </div>
+                    <div class="product-menu">
+                      <ul>
+                        <li class="product-list">
+                          <div>
+                            <a href="#"
+                              ><img
+                                src="./assets/images/car1.jpg"
+                                class="img"
+                                alt=""
+                            /></a>
+                            <a href="" class="deleteimage">
+                              <span class="mini-cart-item-delete"
+                                ><i class="bi bi-x"></i
+                              ></span>
+                            </a>
+                          </div>
+                          <div class="item-details">
+                            <span class="item-count">1</span>
+                            <span>x</span>
+                            <span class="item-price">£36</span>
+                            <p class="item-name">Mercedes-Benz</p>
+                          </div>
+                        </li>
+                      </ul>
+
+                      <div class="cart-buttons">
+                        <a href="#">View Cart</a>
+                        <a href="#">Checkout</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="hamburger-section col-md-1 col-lg-1">
+                  <a href=""><i class="bi bi-list"></i></a>
+
+                  <!-- User Menu START -->
+
+                  <div class="drop-menu user-menu">
+                    <ul>
+                      <li><a href="">Submit Car</a></li>
+                      <li><a href="">My Cars</a></li>
+                      <li><a href="">My Account</a></li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <section class="order-section">
+        <h3>Order Details</h3>
+
+        <form action="">
+          <div class="items">
+            <div class="col-5 items-detail">
+              <p>First Name <span>*</span></p>
+              <input type="text" placeholder="Enter Your Name" required />
+            </div>
+            <div class="col-5 items-detail">
+              <p>Last Name <span>*</span></p>
+              <input type="text" placeholder="Enter Your Last name" required />
+            </div>
+            <div class="col-5 items-detail">
+              <p>Select Your City</p>
+              <select name="" id="" class="sel-example form-control">
+                <option value="">Select City</option>
+                <option value="">Baku</option>
+                <option value="">Ganja</option>
+                <option value="">Sumgayit</option>
+                <option value="">Siyezen</option>
+                <option value="">Sheki</option>
+                <option value="">Guba</option>
+                <option value="">Khachmaz</option>
+              </select>
+            </div>
+            <div class="col-5 items-detail">
+              <p>Your address <span>*</span></p>
+              <input type="text" placeholder="Enter Your Address" required />
+            </div>
+            <div class="col-5 items-detail">
+              <p>Your Phone <span>*</span></p>
+              <input
+                type="tel"
+                required
+                placeholder="Enter your phone number"
+              />
+            </div>
+            <div class="col-5 items-detail">
+              <p>Your Email address <span>*</span></p>
+              <input
+                type="email"
+                placeholder="Enter Your Email Address"
+                required
+              />
+            </div>
+          </div>
+
+          <div class="checkout-totals">
+            <h2>Your Order</h2>
+            <table>
+              <tr>
+                <th class="col-4">Product</th>
+                <th class="col-3">SubTotal</th>
+                <th class="col-3">Total</th>
+              </tr>
+              <tr>
+                <td>Gorgeous Mercedes-Benz E-Class All-Terrain Luxury</td>
+                <td>£ 505.00</td>
+                <td>£ 505.00</td>
+              </tr>
+            </table>
+
+            <div class="confirm">
+              <button><i class="fas fa-check"></i>Place Order</button>
+            </div>
+          </div>
+        </form>
+      </section>
+
+      <section class="features-section">
+        <div class="features d-flex">
+          <div class="feature-element col-3 d-flex justify-content-evenly">
+            <div class="feature-icon">
+              <img src="./assets/images/world-icon.png" alt="" />
+            </div>
+            <div>
+              <p class="feature-first-p">World`s #1</p>
+              <p class="feature-second-p">Largest Auto Portal</p>
+            </div>
+          </div>
+          <div class="feature-element col-3 d-flex justify-content-evenly">
+            <div class="feature-icon">
+              <img src="./assets/images/car-sold-icon.png" alt="" />
+            </div>
+            <div>
+              <p class="feature-first-p">Car sold</p>
+              <p class="feature-second-p">Every 4 minute</p>
+            </div>
+          </div>
+          <div class="feature-element col-3 d-flex justify-content-evenly">
+            <div class="feature-icon">
+              <img src="./assets/images/tag-icon.png" alt="" />
+            </div>
+            <div>
+              <p class="feature-first-p">Offers</p>
+              <p class="feature-second-p">Stay updated pay less</p>
+            </div>
+          </div>
+          <div class="feature-element col-3 d-flex justify-content-evenly">
+            <div class="feature-icon">
+              <img src="./assets/images/compare-icon.png" alt="" />
+            </div>
+            <div>
+              <p class="feature-first-p">Compare</p>
+              <p class="feature-second-p">Decode the right car</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="newsletter-section">
+        <h5>NEWSLETTER</h5>
+        <h4>GET NOTIFIED OF ANY UPDATES!</h4>
+        <div class="form-elements">
+          <form action="email">
+            <input
+              type="email"
+              name="email"
+              placeholder="Your email address"
+              id="email"
+            />
+            <button type="submit" class="subs-btn">
+              <span><i class="bi bi-envelope-fill envelope"></i></span>
+              Subscribe
+            </button>
+          </form>
+        </div>
+      </section>
+
+      <section class="scroll-section">
+        <button
+          type="button"
+          class="btn btn-danger btn-floating btn-lg"
+          id="btn-back-to-top"
+        >
+          <i class="fas fa-arrow-up"></i>
+        </button>
+      </section>
+    </main>
+
+    <footer class="footer-section">
+      <div class="container-fluid">
+        <div class="footer d-flex justify-content-between">
+          <div class="col-3">
+            <h4>SHOWROOM</h4>
+            <ul>
+              <li>
+                <p>KlbTheme, 789 Main rd, Anytown, CA 12345 USA</p>
+              </li>
+              <li>+1 800 789 0000</li>
+              <li><a href="">Harrier@klbtheme.com</a></li>
+              <li>Mon – Fri : 09am to 06pm</li>
+            </ul>
+          </div>
+          <div class="col-3">
+            <h4>QUICK LINKS</h4>
+            <ul>
+              <li><a href="">FAQs</a></li>
+              <li><a href="">Payment</a></li>
+              <li><a href="">Shipment</a></li>
+              <li><a href="">Where is my order?</a></li>
+              <li><a href="">Return Policy</a></li>
+            </ul>
+          </div>
+          <div class="col-3">
+            <h4>STYLE ADVISOR</h4>
+            <ul>
+              <li><a href="">My account</a></li>
+              <li><a href=""> Information</a></li>
+              <li><a href=""> Addresses</a></li>
+              <li><a href=""> Discount</a></li>
+              <li><a href=""> Orders History</a></li>
+              <li><a href=""> Additional Information</a></li>
+            </ul>
+          </div>
+          <div class="col-3">
+            <h4>INFORMATION</h4>
+            <ul>
+              <li><a href="">Site Map</a></li>
+              <li><a href="">Search Terms</a></li>
+              <li><a href="">Advanced Search</a></li>
+              <li><a href="">About Us</a></li>
+              <li><a href="">Contact Us</a></li>
+              <li><a href="">Suppliers</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="footer-end d-flex justify-content-between">
+          <div class="col-4">
+            <ul class="list">
+              <li class="fb">
+                <a href=""><i class="bi bi-facebook"></i></a>
+              </li>
+              <li class="twit">
+                <a href=""><i class="bi bi-twitter"></i></a>
+              </li>
+              <li class="google">
+                <a href=""><i class="bi bi-google"></i></a>
+              </li>
+              <li class="rss">
+                <a href=""><i class="bi bi-rss"></i></a>
+              </li>
+            </ul>
+          </div>
+          <div class="col-5">
+            <p>© 2021 KlbTheme. All Rights Reserved.</p>
+          </div>
+          <div class="col-3">
+            <img src="./assets/images/payment-1.png" alt="" />
+            <img src="./assets/images/payment-2.png" alt="" />
+            <img src="./assets/images/payment-3.png" alt="" />
+            <img src="./assets/images/payment-4.png" alt="" />
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-beta.1/dist/js/select2.min.js"></script>
+
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"
+      integrity="sha512-HGOnQO9+SP1V92SrtZfjqxxtLmVzqZpjFFekvzZVWoiASSQgSr4cw9Kqd2+l8Llp4Gm0G8GIFJ4ddwZilcdb8A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <script
+      src="https://kit.fontawesome.com/3a622e44f0.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="./assets/js/main.js"></script>
+  </body>
+</html>

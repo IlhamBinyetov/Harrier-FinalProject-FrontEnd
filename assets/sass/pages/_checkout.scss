@@ -1,0 +1,179 @@
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+main {
+  .order-section {
+    width: 95%;
+    margin: auto;
+    background-color: white;
+    h3 {
+      text-align: center;
+      padding-top: 4%;
+    }
+    form {
+      padding: 20px;
+    }
+    .items {
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      .items-detail {
+        input {
+          width: 100%;
+          padding: 7px;
+          outline: none;
+          border: 1px solid #e5e5e5;
+        }
+        margin-top: 3%;
+        p {
+          span {
+            color: red;
+          }
+        }
+      }
+    }
+
+    .checkout-totals {
+      padding: 30px;
+      h2 {
+        margin-top: 20px;
+        margin-bottom: 10px;
+        font-weight: 500;
+        line-height: 1.1;
+        font-size: 30px;
+      }
+      table {
+        width: 100%;
+        text-align: center;
+        th {
+          border: 1px solid #e5e5e5;
+          font-weight: bold;
+          padding: 10px;
+          text-align: center;
+        }
+        td {
+          padding: 10px;
+          border: 1px solid #e5e5e5;
+        }
+      }
+
+      .confirm {
+        margin-top: 4%;
+        text-align: right;
+        button {
+          background: green;
+          color: #fff;
+          padding: 10px 20px 8px 20px;
+          font-size: 18px;
+          text-transform: uppercase;
+          font-weight: normal;
+          letter-spacing: 1px !important;
+          border: none;
+          &:hover {
+            background-color: #23292e;
+          }
+          i {
+            margin-right: 5px;
+          }
+        }
+      }
+    }
+  }
+
+  .features-section {
+    background-color: white;
+    padding: 30px;
+    .features {
+      .feature-element {
+        .feature-first-p {
+          font-size: 26px;
+          font-weight: 600;
+          letter-spacing: 0.5px;
+          color: #333;
+          margin: 0px;
+        }
+        .feature-second-p {
+          color: #999;
+          padding: 0px;
+          margin: 0px;
+          padding-top: 3px;
+        }
+      }
+    }
+  }
+  .newsletter-section {
+    background: url(https://klbtheme.com/harrier/wp-content/uploads/2019/05/newsletter-bg.jpg);
+    height: 300px;
+    h5 {
+      color: #fbe122;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      margin: auto;
+      padding-top: 30px;
+      font-weight: 500;
+      text-align: center;
+      font-size: 26px;
+    }
+    h4 {
+      margin-bottom: 23px;
+      display: block;
+      padding: 0px;
+      font-family: "Saira Condensed", sans-serif;
+      font-size: 30px;
+      letter-spacing: 1px;
+      font-weight: 600;
+      text-transform: uppercase;
+      color: #fff;
+      text-align: center;
+    }
+    .form-elements {
+      text-align: center;
+      form {
+        input {
+          border: none;
+          background: #fff;
+          width: 30%;
+          display: inline;
+          color: #a7a7a7;
+          line-height: 20px;
+          background-color: #fff;
+          outline: none;
+          font-size: 14px;
+          font-family: open sans, sans-serif;
+          padding: 20px;
+        }
+        .subs-btn {
+          background-color: yellow;
+          color: black;
+          padding: 19px 28px 20px 28px;
+          cursor: pointer;
+          font-weight: 500;
+          font-size: 15px;
+          text-transform: uppercase;
+          border: none;
+          &:hover {
+            background-color: #333;
+            color: white;
+            .envelope {
+              color: white;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .scroll-section {
+    #btn-back-to-top {
+      position: fixed;
+      bottom: 40px;
+      right: 20px;
+      display: none;
+    }
+  }
+}
